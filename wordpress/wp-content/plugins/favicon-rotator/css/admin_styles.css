@@ -1,0 +1,63 @@
+/* Favicon Admin Styles */
+#fv_list_container {
+	margin: 1em;
+}
+
+#fv_list {
+	width: 100%;
+	overflow: hidden;
+}
+
+.fv_item,
+.fv_item .icon,
+.fv_item .details {
+	float: left;
+}
+
+.fv_item {
+	width: auto;
+	border: 1px solid #e2e2e2;
+	background: #fcfcfc;
+	margin: 0 1em 1em 0;
+	padding: 1em 2em 1em 1em;
+	position: relative;
+	-moz-border-radius: 5px;
+}
+
+.fv_item .icon {
+	margin-right: 0.8em;
+	border: 1px solid #ddd;
+	width: 16px;
+	height: 16px;
+}
+
+#fv_item_wrap_touch .fv_item .icon {
+	width: 114px;
+	height: 114px;
+}
+
+.fv_item .remove {
+	background: url('../images/icon_close.gif') no-repeat;
+	text-indent: -2000em;
+	display: block;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	opacity: .5;
+}
+
+.fv_item a:hover.remove {
+	opacity: 1;
+}
+
+.fv_btn {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+}
+
+.fv_container {
+	clear: all;
+	overflow: hidden;
+}
