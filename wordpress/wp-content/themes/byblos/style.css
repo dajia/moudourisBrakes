@@ -1,0 +1,197 @@
+/******************************************************************
+Theme Name: Byblos
+Theme URI: http://www.smartcatdesign.net/byblos
+Description: Byblos is great for a business or a blog site. It is a responsive theme with orange and dark grey colors and trasnparency. It looks really good with a fixed background image, or on the default background.
+Version: 1.2
+Template: twentytwelve
+Template Version: 1.3
+Author: Smartcat
+Author URI: http://www.smartcatdesign.net/
+Tags: gray, white, orange, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+
+License: GPL V2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+******************************************************************/
+@import url("../twentytwelve/style.css");
+a,a:visited{color: #B83C24 !important}
+a:hover{ color: #83a7ab !important;}
+body{
+    background-color: #4c4f53;
+    background: -webkit-linear-gradient(130deg, rgba(75, 60, 80, 0) 60%, #4a434f 100%) 0 0 fixed, -webkit-linear-gradient(top, #83a7ab 0%, #23263c 100%) 0 0 fixed;
+    background: linear-gradient(130deg, rgba(75, 60, 80, 0) 60%, #4a434f 100%) 0 0 fixed, linear-gradient(to bottom, #83a7ab 0%, #23263c 100%) 0 0 fixed;
+    background-size: 100% 1800px, 1400px 1400px, 1600px 1600px, 100% 100%, 100% 100%, 100% 100%;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+body .site{
+    padding: 0;
+    margin-top: 10px;
+}
+.site{
+    background: none;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+/*---------------- Header -----------------------*/
+.site-header{
+    background: #B83C24;
+    padding: 0;
+}
+.site-header h1{
+    padding: 10px 20px;
+    text-align: left;
+}
+.site-header h1 a,.site-header h1 a:hover{
+    color: #ffffff !important;
+}
+.site-header h2{
+    margin-right: 20px;
+    color: #ffffff;
+}
+@media(min-width:600px){
+    .site-header h2{
+        position: relative;
+        bottom: 40px;
+    }
+}
+.site-description{
+    float: right;
+}
+
+/*-------------- Buttons & Form Controls ------------------------*/
+button, 
+input[type="submit"], 
+input[type="button"], 
+input[type="reset"]{
+    background: #B83C24;
+    color: #ffffff;
+    transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+    border: none;
+}
+button:hover, 
+input[type="submit"]:hover, 
+input[type="button"]:hover, 
+input[type="reset"]:hover{
+    background: #2B3039;
+    color: #ffffff;
+}
+button:active, 
+input[type="submit"]:active, 
+input[type="button"]:active, 
+input[type="reset"]:active{
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+input,
+input[type='text'],
+input[type='password'],
+input[type="email"],
+input[type="search"]{
+    outline: none;
+    transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+}
+input:focus,
+input[type='text']:focus,
+input[type='password']:focus,
+input[type="email"]:focus,
+input[type="search"]:focus{
+
+    box-shadow: 0 0 10px #B83C24;
+    -moz-box-shadow: 0 0 10px #B83C24;
+    -webkit-box-shadow: 0 0 10px #B83C24;
+}
+/*--------------- Navigation Menu ----------------*/
+@media(min-width: 600px){
+    .main-navigation li a{
+        color: #ffffff !important;
+        padding: 7px 0;
+    }
+    .main-navigation li a:hover{
+        color: #B83C24 !important;
+    }
+    .main-navigation .current_page_item > a{
+        color: #B83C24 !important;
+    }
+    .main-navigation ul.nav-menu{
+        background: #2B3039;
+        border-top: none;
+        border-bottom: none;
+    }
+    .main-navigation .nav-menu li.menu-item:first-child{
+        margin-left: 20px;
+    }
+    /*2nd level*/
+    .main-navigation li ul li{
+        margin-left: 0 !important;
+    }
+    .main-navigation li ul li:first-child{
+        border-top: 4px solid #B83C24;
+    }
+    .main-navigation li ul li a{
+        background: #2B3039;
+    }
+    .main-navigation li ul li a:hover{
+        background: #2B3039;
+        color: #B83C24 !important;
+    }
+    
+}
+/*--------------------- content ------------------*/
+.site-content article{
+    border-bottom: none;
+}
+@media(min-width:600px){
+    .entry-header .entry-title{
+        font-size: 32px;
+        line-height: 32px;
+        color: #B83C24;
+    }
+    .site-content{
+        width: 70%;
+    }
+    .site-content #content{
+        padding: 10px 10px 10px 20px;
+        background: #ffffff;
+        background: rgba(255,255,255,0.5);
+/*        border: 1px solid #d0d0d0;
+        box-shadow: 0 0 5px #333;
+        -moz-box-shadow: 0 0 5px #333;
+        -webkit-box-shadow: 0 0 5px #333;*/
+    }
+    
+}
+/*--------------------- widgets -------------------*/
+@media(min-width: 600px){
+    .widget-area{
+        width: 28%;
+        
+    }
+    .template-front-page.two-sidebars .widget-area .front-widgets{
+        width: 66%;
+
+    }
+    .template-front-page.two-sidebars .widget-area .front-widgets + .front-widgets{
+        width: 32%;
+    }
+}
+.widget-area .widget{
+    background: #2B3039;
+    background: rgba(0,0,0,0.5);
+    padding: 15px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.widget-area .widget .widget-title{
+    background: #B83C24;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+}

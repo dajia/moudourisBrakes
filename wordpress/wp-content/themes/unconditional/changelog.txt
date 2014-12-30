@@ -1,0 +1,25 @@
+Theme Name:   Unconditional
+File Name:    Changelog
+Tested up to: 4.1-RC1
+Stable tag:	  1.0.4
+
+== Changelog ==
+
+= 1.0.4 =
+* Added language files for Bulgarian
+* Added a note to the customizer with a link to FontAwesome icon cheatsheet.
+
+= 1.0.3 =
+* Fixed some missing translation strings and wrong textdomain.
+* Fixed accidental deletion of files in previous version
+
+= 1.0.2 =
+* More security enhancements
+* Minor CSS and code adjustments
+
+= 1.0.1 =
+* Minor bug fixes
+* Added security enhancements
+
+= 1.0.0 =
+Initial Release 

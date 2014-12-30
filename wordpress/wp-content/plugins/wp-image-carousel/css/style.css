@@ -1,0 +1,60 @@
+.wpic_container html, .wpic_container body, .wpic_container div, .wpic_container span, .wpic_container h1, .wpic_container h2, .wpic_container h3, .wpic_container h4, .wpic_container h5 .wpic_container, h6, .wpic_container a, .wpic_container ul, .wpic_container li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+} 
+
+.wpic_container {
+	margin-top: 3px;
+	}
+	
+.wpic_navigation {
+	overflow: hidden;
+	}	
+
+.wpic_next {
+	opacity: 0.85;
+   transition: opacity .20s ease-in-out;
+   -moz-transition: opacity .20s ease-in-out;
+   -webkit-transition: opacity .20s ease-in-out;
+	padding: 1px;
+	width: 25px;
+	height: 22px;
+	border: 0px;
+	}
+	
+.wpic_next:hover {
+	opacity: 1;
+	width: 25px;
+	height: 22px;
+	border: 0px;
+	}
+	
+.wpic_prev {
+	opacity: 0.85;
+   transition: opacity .20s ease-in-out;
+   -moz-transition: opacity .20s ease-in-out;
+   -webkit-transition: opacity .20s ease-in-out;
+	padding: 1px;
+	width: 25px;
+	height: 22px;
+	border: 0px;
+	margin-right: 2px;
+	margin-left: 2px;
+	}
+	
+.wpic_prev:hover {
+	opacity: 1;
+	width: 25px;
+	height: 22px;
+	border: 0px;
+	}
+
+.wpic_content img {
+	margin-right: 3px;
+	}
+
