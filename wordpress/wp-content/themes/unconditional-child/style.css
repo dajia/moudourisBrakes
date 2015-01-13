@@ -1026,3 +1026,14 @@ h1 {
   font-size: 26px;
  }
 }
+
+#header-image {
+ height:50%!important;
+}
+.video-section {
+ height: 45%!important;
+}
+
+.singular .page-header, .archive .page-header, .single-project .page-header {
+ padding-top: 20px;
+}
