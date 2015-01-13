@@ -47,6 +47,14 @@ public static function after_setup_theme() {
 	 * Add default posts and comments RSS feed links to head
 	 */
 	add_theme_support( 'automatic-feed-links' );
+	
+	/*
+	 * Let WordPress manage the document title.
+	 * By adding theme support, we declare that this theme does not use a
+	 * hard-coded <title> tag in the document head, and expect WordPress to
+	 * provide it for us.
+	 */
+	add_theme_support( 'title-tag' ); 
 
 	/**
 	 * Enable support for Post Thumbnails on posts and pages
@@ -223,39 +231,3 @@ if ( class_exists( 'Jetpack' ) ) :
     require( $temp_dir . '/assets/inc/jetpack.php');
 	require( $temp_dir . '/assets/inc/custom.php');
 endif;
-
-/*=================== Get Google map mage START =========================*/
-function getGoogleMapImage($args)
-{
-  $defaults = array(
-    'address' => '',
-    'zoom' => '15',
-    'width' => '540',
-    'height' => '262',
-    'scale' => 'false',
-    'maptype' => 'roadmap',
-    'devkey' => 'AIzaSyD8y7IJNTgRSwbnoR-I1OopiRU721SZg3k',
-    'format' => 'png',
-    'sensor' => 'false',
-    'markerSize' => 'mid',
-    'markerColor' => 'red'
-  );
-  $r = wp_parse_args($args, $defaults);
-  return '<a href="https://www.google.gr/maps/search/' . urlencode($r["address"]) . '" target="_blank">' .
-  '<img src="http://maps.googleapis.com/maps/api/staticmap?' .
-  'center=' . urlencode($r["address"]) .
-  '&amp;zoom=' . $r["zoom"] .
-  '&amp;scale=' . $r["scale"] .
-  '&amp;size=' . $r["width"] . 'x' . $r["height"] .
-  '&amp;maptype=' . $r["maptype"] .
-  '&amp;key=' . $r["devkey"] .
-  '&amp;format=' . $r["format"] .
-  '&amp;markers=markers=' .
-  'size:' . $r["markerSize"] . '%7C' .
-  'color:' . $r["markerColor"] .
-  '%7C' . urlencode($r["address"]) .
-  '&amp;sensor=' . $r["sensor"] . '"' .
-  ' alt="' . $r["address"] . '"/>' .
-  '</a>';
-}
-/*=================== Get Google map mage END =========================*/

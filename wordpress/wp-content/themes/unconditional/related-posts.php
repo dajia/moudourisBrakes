@@ -2,14 +2,14 @@
 /**
  */
 do_action( 'unconditional_related_posts_before' );
-$related_posts = Unconditional::get_related_posts();
+$unconditional_rel_posts = Unconditional::get_related_posts();
 ?>
-<?php if ( $related_posts->have_posts() && $related_posts->found_posts >= 2 ) : ?>
+<?php if ( $unconditional_rel_posts->have_posts() && $unconditional_rel_posts->found_posts >= 2 ) : ?>
 
 <div class="related-content">
 	<h3 class="related-content-title"><?php _e( 'You may also find these articles interesting', 'unconditional' ); ?></h3>
 
-	<?php while ( $related_posts->have_posts() ) : $related_posts->the_post(); ?>
+	<?php while ( $unconditional_rel_posts->have_posts() ) : $unconditional_rel_posts->the_post(); ?>
 
 		<article id="post-<?php the_ID(); ?>" class="hentry">
 			<header class="entry-header">

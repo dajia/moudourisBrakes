@@ -1,28 +1,25 @@
 <?php 
 
 	   if ( get_theme_mod( 'unconditional_frontpage_project_num' )) { 
-	      $posts_per_page = get_theme_mod( 'unconditional_frontpage_project_num' );
+	      $unconditional_proj_count = get_theme_mod( 'unconditional_frontpage_project_num' );
 	   } else {
-	      $posts_per_page = get_option( 'jetpack_portfolio_posts_per_page', '10' );
+	      $unconditional_proj_count = get_option( 'jetpack_portfolio_posts_per_page', '10' );
 	   }
 
-			$args = array(
+			$unconditional_args = array(
 				'post_type'      => 'jetpack-portfolio',
-				'paged'          => $paged,
-				'posts_per_page' => $posts_per_page,
+				'posts_per_page' => $unconditional_proj_count,
 			);
 
-			$project_query = new WP_Query ( $args );
+			$unconditional_proj_query = new WP_Query ( $unconditional_args );
 
-				if ( post_type_exists( 'jetpack-portfolio' ) && $project_query -> have_posts() ) :
+				if ( post_type_exists( 'jetpack-portfolio' ) && $unconditional_proj_query -> have_posts() ) :
 
-					while ( $project_query -> have_posts() ) : $project_query -> the_post();
+					while ( $unconditional_proj_query -> have_posts() ) : $unconditional_proj_query -> the_post();
 
 						get_template_part( 'content/content', 'portfolio' );
 
 					endwhile;
-
-					// unconditional_portfolio_pagination( $project_query->max_num_pages );
 
 					wp_reset_postdata();
 					

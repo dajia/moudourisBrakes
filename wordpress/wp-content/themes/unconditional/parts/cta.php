@@ -7,19 +7,9 @@
 			    <?php echo esc_html(get_theme_mod( 'unconditional_intro_text' )) ;?>
 			</p>
 		<?php } else { ?>
-		    <p class="lead"  style="text-transform: uppercase">
-          <?php bloginfo( 'description' ); ?>
-          <?php
-          //if(pll_current_language('en-US') ){
-            //printf( __( 'ABS/EBS/ECAS INSTALLATIONS – AIR SYSTEMS SERVICE – BRAKE CONTROL', 'unconditional' ) );
-          //}else{
-            //printf( __( 'ΕΦΡΑΜΟΓΕΣ ABS/EBS/ECAS – ΕΠΙΣΚΕΥΗ ΣΥΣΤΗΜΑΤΩΝ ΑΕΡΟΣ – ΕΛΕΓΧΟΣ ΦΡΕΝΩΝ', 'unconditional' ) );
-          //} ;?>
-			    <?php //printf( __( 'ABS/EBS/ECAS INSTALLATIONS – AIR SYSTEMS SERVICE – BRAKE CONTROL', 'unconditional' ) ); ?>
-          <?php //printf( __( 'ΕΦΡΑΜΟΓΕΣ ABS/EBS/ECAS – ΕΠΙΣΚΕΥΗ ΣΥΣΤΗΜΑΤΩΝ ΑΕΡΟΣ – ΕΛΕΓΧΟΣ ΦΡΕΝΩΝ', 'unconditional' ) ); ?>
-          <?php //printf( language_attributes() ); ?>
-
-        </p>
+		    <p class="lead">
+			    <?php printf( __( 'We are a small team of web development enthusiasts aiming to generate clean and functional theme using the Bootstrap toolkit together with WordPress...', 'unconditional' ) ); ?>
+			</p>
         <?php } ?>
 		<?php endif; ?>
 		<br> 

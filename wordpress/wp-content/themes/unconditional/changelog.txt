@@ -1,9 +1,32 @@
 Theme Name:   Unconditional
 File Name:    Changelog
-Tested up to: 4.1-RC1
-Stable tag:	  1.0.4
+Tested up to: 4.1
+Stable tag:	  1.0.8
 
 == Changelog ==
+
+= 1.0.8 =
+* Fixed bug on header image being returned shorter than the container.
+* Changed style elements to better match the areas being styled.
+* Added support for the new core wp_title() function.
+* Minor style improvements.
+
+= 1.0.7 =
+* Fixed bug with Forum page not rendering correctly.
+* Added styles for BBPress to closely match theme design.
+* Moved Title tooltip script to a function callback and added option to disable it. Option under Customizer >> Unconditional Miscellaneous Options.
+* Minor CSS adjustments
+
+= 1.0.6 =
+* Added option to show/hide post meta data on front/home blog feed
+* Fixed missing variable prefixes.
+* Minor CSS & code adjustments.
+
+= 1.0.5 =
+* Fixed bug with full width not applying on front page.
+* Added unconditional.po to assist in theme translation.
+* Added a note re and a link to FontAwesome cheatsheet on the Services tab in the theme Customizer.
+* Added a note to readme.txt re menu top level item not being clickable as a menu link.
 
 = 1.0.4 =
 * Added language files for Bulgarian

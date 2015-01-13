@@ -11,17 +11,19 @@
  * @package Unconditional
  */
 
-get_header(); ?>
+get_header(); 
+$unconditional_feed_header = esc_html(get_theme_mod( 'unconditional_feed_header_title' ));
+?>
 
 <section class="container-fluid" id="section3">
     <div class="row">
       <div class="col-sm-10 col-sm-offset-1">
         <div class="row">
-		<div id="blog-section" class="col-sm-12">
+		<div id="blog-section" class="col-sm-8">
 		<?php do_action( 'unconditional_before_index' );
 		    if ( get_theme_mod( 'unconditional_feed_header_visibility' ) != 1 ) {
 			    if (get_theme_mod( 'unconditional_feed_header_title' )) { ?>
-					 <h3 class="feed head text-center"><?php //echo $feed_header ?></h3>
+					 <h3 class="feed head text-center"><?php echo $unconditional_feed_header ?></h3>
                 <?php } else { ?>
                      <h3 class="feed head text-center"><?php _e('Latest News On ', 'unconditional' ); ?><?php bloginfo( 'name' ); ?><sup>™</sup></h3>
 			    <?php } ?>
@@ -30,9 +32,9 @@ get_header(); ?>
 		    	      get_template_part( 'content/feed' );
 			    ?>
 		</div>
-           <!--<div class="col-sm-4">
-		       <?php //get_sidebar(); ?>
-		   </div>-->
+           <div class="col-sm-4 widget-area">
+		       <?php get_sidebar(); ?>
+		   </div>		
         </div>
       </div>
    </div>

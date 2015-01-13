@@ -10,8 +10,7 @@
 <!--<![endif]-->
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 		
-    <title><?php wp_title( '|', true, 'right' ); ?></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	
@@ -19,57 +18,16 @@
   </head>
 <body <?php body_class(); ?>>
 
+<?php 
 
-<!--<nav class="navbar navbar-trans navbar-static-top" role="navigation">
-  <div class="container">
-
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-    </div>
-    <div id="navbar-collapse" class="nav-container collapse navbar-collapse">  <?php
-
-
-      //wp_nav_menu( array( 'menu' => 'Main menu', 'items_wrap' =>
-        //'<ul class="nav navbar-nav">%3$s</ul>'
-      //));
-
-      //wp_nav_menu( array( 'menu' => 'User menu', 'items_wrap' =>
-        //'<ul class="pull-right nav navbar-nav">%3$s</ul>'
-      //));
-
-
-      ;?></div>
-
-  </div>
-</nav>-->
-
-
-
-<?php
-
-
-get_template_part( 'top-nav' );
-
-
+get_template_part( 'top-nav' ); 
 
 if ( is_front_page() ) : ?>
-
-
-
-
-
-
 <!--Video Section-->
-<section class="content-section video-section" id="section0">
+<section class="header-section" id="section0">
   <?php if ( get_header_image() ) : ?>
 	<div id="header-image">
-			<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
+		<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
 	</div>	
   <?php endif; ?>
 
@@ -82,7 +40,7 @@ if ( is_front_page() ) : ?>
 			    <img src="<?php echo esc_url(get_theme_mod( 'unconditional_logo_image' )); ?>" alt="<?php echo esc_html(get_theme_mod( 'unconditional_logo_alt_text' )); ?>" />
 			</a>
 		<?php else : ?>
-            <a class="brand" href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php //bloginfo( 'description' ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+            <a class="brand" href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php bloginfo( 'description' ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
         <?php endif; ?>
 		</h1>
 	   </div>
@@ -99,10 +57,10 @@ if ( is_front_page() ) : ?>
 
 else : ?>
 
-<section class="content-section video-section" id="section0">
+<section class="header-section" id="section0">
     <?php if ( get_header_image() ) : ?>
 	<div id="header-image">
-			<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
+		<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
 	</div>	
     <?php endif; ?>
 	 <div class="container">
@@ -114,13 +72,12 @@ else : ?>
 			    <img src="<?php echo esc_url(get_theme_mod( 'unconditional_logo_image' )); ?>" alt="<?php echo esc_html(get_theme_mod( 'unconditional_logo_alt_text' )); ?>" />
 			</a>
 		<?php else : ?>
-            <a class="brand" href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php //bloginfo( 'description' ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+            <a class="brand" href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php bloginfo( 'description' ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
         <?php endif; ?>
 		</h1>
 	   </div>
       </div>
 		
     </div>
-  <?php get_template_part( 'parts/cta' ); ;?>
 </section>
 <?php endif; ?>

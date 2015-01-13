@@ -49,8 +49,14 @@ function unconditional_customize_register( $wp_customize ) {
 				
 	$wp_customize->add_section( 'unconditional_blogfeed_options' , array(
        'title'       => __('Unconditional Blog Feed Options','unconditional'),
-	   'description' => sprintf( __( 'Use the following settings to set Frontpage/Blog home feed layout.', 'unconditional' )),
+	   'description' => sprintf( __( 'Use the following settings to set Frontpage/Blog home feed preferences.', 'unconditional' )),
        'priority'    => 38,
+    ) );
+	
+	$wp_customize->add_section( 'unconditional_misc_options' , array(
+       'title'       => __('Unconditional Miscellaneous Options','unconditional'),
+	   'description' => sprintf( __( 'These are options that do not fit in elsewhere and are provided for your convenience.', 'unconditional' )),
+       'priority'    => 140,
     ) );
 		
 	/**
@@ -519,6 +525,22 @@ function unconditional_customize_register( $wp_customize ) {
 		'priority'  => 2,
         'type'      => 'text',
     ));
+	
+	$wp_customize->add_setting(
+        'unconditional_home_meta', array (
+		'sanitize_callback' => 'unconditional_sanitize_checkbox',
+		'capability' => 'edit_theme_options',
+    ));
+
+    $wp_customize->add_control(
+        'unconditional_home_meta',
+    array(
+        'type'     => 'checkbox',
+        'label'    => __('Show Post Meta Data On Blog Feed?', 'unconditional'),
+        'section'  => 'unconditional_blogfeed_options',
+		'priority' => 3,
+        )
+    );
 		
 	$wp_customize->add_setting(
         'unconditional_homefeed_excerpt_length', array(
@@ -537,6 +559,23 @@ function unconditional_customize_register( $wp_customize ) {
         )
     );
 	// End blog feed options
+	
+	// Miscellaneous Section Settings
+	$wp_customize->add_setting(
+        'unconditional_title_tooltip_switch', array (
+		'sanitize_callback' => 'unconditional_sanitize_checkbox',
+		'capability' => 'edit_theme_options',
+    ));
+
+    $wp_customize->add_control(
+        'unconditional_title_tooltip_switch',
+    array(
+        'type'     => 'checkbox',
+        'label'    => __('Turn off the title tooltip?', 'unconditional'),
+        'section'  => 'unconditional_misc_options',
+		'priority' => 1,
+        )
+    );
 	
 }
 add_action( 'customize_register', 'unconditional_customize_register' );

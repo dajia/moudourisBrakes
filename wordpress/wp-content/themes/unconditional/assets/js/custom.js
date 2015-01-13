@@ -18,10 +18,6 @@ jQuery(document).ready(function () {
 	// ADD SLIDEUP ANIMATION TO DROPDOWN //
 	jQuery('.dropdown').on('hide.bs.dropdown', function(e){
 	jQuery(this).find('.dropdown-menu').first().stop(true, true).slideUp();
-	});
-	
-	jQuery(function(){
-        jQuery('a[title]').tooltip();
-    });
+	});	
 
 });

@@ -87,3 +87,15 @@ function unconditional_ie_support_header() {
     echo '<![endif]-->'. "\n";
 }
 add_action( 'wp_head', 'unconditional_ie_support_header', 1 );
+
+
+if ( get_theme_mod( 'unconditional_title_tooltip_switch' ) != 1 ) {
+function unconditional_tooltip_switch() { ?>
+   	<script type="text/javascript">
+   	jQuery(function(){
+        jQuery('a[title]').tooltip();
+    });
+   	</script>
+<?php } 
+add_action( 'wp_footer', 'unconditional_tooltip_switch', 210 );
+}

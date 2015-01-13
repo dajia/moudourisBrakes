@@ -17,7 +17,7 @@ get_header(); ?>
     <div class="row">
       <div class="col-sm-10 col-sm-offset-1">
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-8">
 		<?php do_action( 'unconditional_before_index' ); ?>
 		<?php if ( have_posts() ) : ?>
 
@@ -43,10 +43,10 @@ get_header(); ?>
 		<?php endif; ?>
         <?php do_action( 'unconditional_after_index' ); ?>
 		</div>
-          <!--<div class="col-sm-4">
-		       <?php //get_sidebar(); ?>
+          <div class="col-sm-4">
+		       <?php get_sidebar(); ?>
 		  </div>
-        </div>-->
+        </div>
       </div>
    </div>
 </section>
