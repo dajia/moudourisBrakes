@@ -656,7 +656,7 @@ section .contact a.facebook:hover,.fa-facebook{color:#00acee}
 .box .fa {
  font-size:18px;
  margin-right:0px;
- padding-left: 3px;
+ padding-left: 0px;
 }
 
 .box > .icon {
@@ -862,6 +862,7 @@ textarea {
  color: #fff !important;
 }
 .box a > .icon:hover > .image > i {
+ color: #f33f3f !important;
  color: #d3d3d3 !important;
 }
 
