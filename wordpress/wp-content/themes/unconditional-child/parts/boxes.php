@@ -23,7 +23,7 @@
             <?php if (get_theme_mod( 'unconditional_service1_icon' )) { ?>
               <div class="image"><i class="fa fa-<?php echo $service1_icon ?>"></i></div>
             <?php } else { ?>
-              <div class="image"><i class="fa fa-thumbs-o-up"></i></div>
+              <div class="image"><i class="fa fa-paw"></i></div>
             <?php } ?>
             <div class="info">
               <?php if (get_theme_mod( 'unconditional_service1_title' )) { ?>
@@ -47,77 +47,71 @@
 			</div> 
 		</div>
 
-    <div class="container">
-      <div class="row">
-        <!-- Service Boxes -->
-        <div class="col-sm-4 col-sm-6 col-xs-12">
-          <div class="box">
-            <?php if (get_theme_mod( 'unconditional_service1_url' )) { ?>
-            <a href="<?php //echo $service2_url ?><?php the_field('second_tile_link'); ?>">
+      <div class="col-sm-4 col-sm-6 col-xs-12">
+        <div class="box">
+          <?php if (get_theme_mod( 'unconditional_service1_url' )) { ?>
+          <a href="<?php //echo $service2_url ?><?php the_field('second_tile_link'); ?>">
+            <?php } ?>
+            <div class="icon">
+              <?php if (get_theme_mod( 'unconditional_service1_icon' )) { ?>
+                <div class="image"><i class="fa fa-<?php echo $service2_icon ?>"></i></div>
+              <?php } else { ?>
+                <div class="image"><i class="fa fa-thumbs-o-up"></i></div>
               <?php } ?>
-              <div class="icon">
-                <?php if (get_theme_mod( 'unconditional_service1_icon' )) { ?>
-                  <div class="image"><i class="fa fa-<?php echo $service2_icon ?>"></i></div>
+              <div class="info">
+                <?php if (get_theme_mod( 'unconditional_service1_title' )) { ?>
+                  <h3 class="title"><?php //echo $service2_title ?><?php the_field('second_tile_title'); ?></h3>
                 <?php } else { ?>
-                  <div class="image"><i class="fa fa-thumbs-o-up"></i></div>
+                  <h3 class="title"><?php printf( __( 'Made with Bootstrap', 'unconditional' ) ); ?></h3>
                 <?php } ?>
-                <div class="info">
-                  <?php if (get_theme_mod( 'unconditional_service1_title' )) { ?>
-                    <h3 class="title"><?php //echo $service2_title ?><?php the_field('second_tile_title'); ?></h3>
-                  <?php } else { ?>
-                    <h3 class="title"><?php printf( __( 'Made with Bootstrap', 'unconditional' ) ); ?></h3>
-                  <?php } ?>
 
-                  <?php if (get_theme_mod( 'unconditional_service1_text' )) { ?>
-                    <p><?php //echo $service2_text ?><?php the_field('second_tile_summary'); ?></p>
-                  <?php } else { ?>
-                    <p>
-                      <?php printf( __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.', 'unconditional' ) ); ?>
-                    </p>
-                  <?php } ?>
-                </div>
-              </div>
-
-            </a>
-            <div class="space"></div>
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="row">
-            <!-- Service Boxes -->
-            <div class="col-sm-4 col-sm-6 col-xs-12">
-              <div class="box">
-                <?php if (get_theme_mod( 'unconditional_service1_url' )) { ?>
-                <a href="<?php //echo $service3_url ?><?php the_field('third_tile_link'); ?>">
-                  <?php } ?>
-                  <div class="icon">
-                    <?php if (get_theme_mod( 'unconditional_service1_icon' )) { ?>
-                      <div class="image"><i class="fa fa-<?php echo $service3_icon ?>"></i></div>
-                    <?php } else { ?>
-                      <div class="image"><i class="fa fa-thumbs-o-up"></i></div>
-                    <?php } ?>
-                    <div class="info">
-                      <?php if (get_theme_mod( 'unconditional_service1_title' )) { ?>
-                        <h3 class="title"><?php //echo $service3_title ?><?php the_field('third_tile_title'); ?></h3>
-                      <?php } else { ?>
-                        <h3 class="title"><?php printf( __( 'Made with Bootstrap', 'unconditional' ) ); ?></h3>
-                      <?php } ?>
-
-                      <?php if (get_theme_mod( 'unconditional_service1_text' )) { ?>
-                        <p><?php //echo $service3_text ?><?php the_field('third_tile_summary'); ?></p>
-                      <?php } else { ?>
-                        <p>
-                          <?php printf( __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.', 'unconditional' ) ); ?>
-                        </p>
-                      <?php } ?>
-                    </div>
-                  </div>
-
-                </a>
-                <div class="space"></div>
+                <?php if (get_theme_mod( 'unconditional_service1_text' )) { ?>
+                  <p><?php //echo $service2_text ?><?php the_field('second_tile_summary'); ?></p>
+                <?php } else { ?>
+                  <p>
+                    <?php printf( __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.', 'unconditional' ) ); ?>
+                  </p>
+                <?php } ?>
               </div>
             </div>
+
+          </a>
+          <div class="space"></div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 col-sm-6 col-xs-12">
+        <div class="box">
+          <?php if (get_theme_mod( 'unconditional_service1_url' )) { ?>
+          <a href="<?php //echo $service3_url ?><?php the_field('third_tile_link'); ?>">
+            <?php } ?>
+            <div class="icon">
+              <?php if (get_theme_mod( 'unconditional_service1_icon' )) { ?>
+                <div class="image"><i class="fa fa-<?php echo $service3_icon ?>"></i></div>
+              <?php } else { ?>
+                <div class="image"><i class="fa fa-thumbs-o-up"></i></div>
+              <?php } ?>
+              <div class="info">
+                <?php if (get_theme_mod( 'unconditional_service1_title' )) { ?>
+                  <h3 class="title"><?php //echo $service3_title ?><?php the_field('third_tile_title'); ?></h3>
+                <?php } else { ?>
+                  <h3 class="title"><?php printf( __( 'Made with Bootstrap', 'unconditional' ) ); ?></h3>
+                <?php } ?>
+
+                <?php if (get_theme_mod( 'unconditional_service1_text' )) { ?>
+                  <p><?php //echo $service3_text ?><?php the_field('third_tile_summary'); ?></p>
+                <?php } else { ?>
+                  <p>
+                    <?php printf( __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.', 'unconditional' ) ); ?>
+                  </p>
+                <?php } ?>
+              </div>
+            </div>
+
+          </a>
+          <div class="space"></div>
+        </div>
+      </div>
 
     <!-- /Service Boxes -->
 	</div>
