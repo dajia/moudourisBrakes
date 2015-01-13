@@ -3,8 +3,8 @@
  * @package Unconditional
  */
 global $post;
-$project_type = esc_html(get_post_meta( $post->ID, '_unconditional_project_type', true ));
-$project_status = esc_html(get_post_meta( $post->ID, '_unconditional_project_status', true ));
+$unconditional_proj_type = esc_html(get_post_meta( $post->ID, '_unconditional_project_type', true ));
+$unconditional_proj_status = esc_html(get_post_meta( $post->ID, '_unconditional_project_status', true ));
  ?>
 
 <div class="col-sm-3 col-sm-6">
@@ -24,13 +24,13 @@ $project_status = esc_html(get_post_meta( $post->ID, '_unconditional_project_sta
 		    <p class="project-info">
 		    <i class="fa fa-paint-brush"></i>
 			<?php _e( 'Project Type: ', 'unconditional'); ?>
-		    <?php echo $project_type ?>
+		    <?php echo $unconditional_proj_type ?>
 		</p>
 		
 		<p class="project-info">
 		   <i class="fa fa-cogs"></i>
            <?php _e( 'Project Status: ', 'unconditional'); ?>
-		   <?php echo $project_status ?>
+		   <?php echo $unconditional_proj_status ?>
 		</p>
 		
 		<a href="<?php the_permalink(); ?>">		    

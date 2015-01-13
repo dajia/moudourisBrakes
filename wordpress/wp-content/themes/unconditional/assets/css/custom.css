@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+@import url(//fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
 
 html,body {
 	height:100%;
@@ -24,8 +24,7 @@ a:hover {
 }
 
 .navbar-trans li>a:hover,
-.navbar-trans li>a:focus,
-.navbar-trans li.active>a{
+.navbar-trans li>a:focus {
 	background-color: #f33f3f;
 	color: #fff;
 }
@@ -67,12 +66,7 @@ body.admin-bar #header-image {
 	height: 100%;
 }
 
-section.content-section {
-	padding-top:20px;  
-    padding-bottom:20px;
-}
-
-.video-section  {
+.header-section  {
 background-color: transparent;
 padding: 20px 0 0 0;
 max-height: 460px;
@@ -80,15 +74,15 @@ height: 100%;
 overflow: hidden; 
 /* Incase of overlay problems just increase the min-height*/
 }
-.video-section h1,
-.video-section h2, 
-.video-section h3,
-.video-section h4, 
-.video-section h5{
+.header-section h1,
+.header-section h2, 
+.header-section h3,
+.header-section h4, 
+.header-section h5{
 text-align:center;
-color:#f5f5f5;
+color:#fff;
 }
-.video-section h1{
+.header-section h1{
 font-size:50px;
 font-family: 'Roboto Condensed', sans-serif;
 font-weight:bold;
@@ -98,21 +92,18 @@ text-shadow: 1px 1px 1px #000;
 -webkit-text-shadow: 1px 1px 1px #000;
 -moz-text-shadow: 1px 1px 1px #000;
 }
-.video-section h3{
+.header-section h3{
 font-size: 25px;
 font-weight:lighter;
 margin: 0px auto 15px;
 }
 
-.video-section a:hover {
+.header-section a:hover {
 	text-decoration: none;
 }
-.video-section .buttonBar{display: none;}
-.player {font-size: 1px;}
 
 .v-center {
     padding-top: 6%;
-    padding-top: 14%;
     font-size: 70px;
 }
 
@@ -131,8 +122,7 @@ h1.v-center  a:hover {
 #section0 {
 	margin-top: 0;
 	background-color: transparent;
-    color: #dedeff;
-    color: #f5f5f5;
+    color: #dedeff;  
     padding-bottom: 50px;
 }
 
@@ -146,7 +136,6 @@ h1.v-center  a:hover {
 #section1 a {
 	background-color: transparent;
     color: #dedeff;
-
 }
   
 #section2 {
@@ -161,7 +150,7 @@ h1.v-center  a:hover {
   
 #section3 {
 	background-color: #fff;
-	color: #3c444c;
+	color: #444;
 }
 #section3 {
     padding-top: 20px;  
@@ -198,7 +187,7 @@ h1.v-center  a:hover {
 
 #section7 {
     background-color: #fff;
-	color:#3c444c;
+	color:#444;
 }
 
 #section7 {
@@ -382,7 +371,9 @@ td {
 }
 
 /* Comment Section */
-
+#respond {
+    padding-left: 10px;
+}
 #respond h3#reply-title {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: normal;
@@ -460,6 +451,7 @@ td {
 #comments h2.comments-title {
   font-size: x-large;
   font-family: 'Roboto Condensed', sans-serif;
+  padding-left: 10px;
 }
 #comments ol.comment-list {
   list-style: none;
@@ -601,44 +593,6 @@ a{transition:all .3s ease;-webkit-transition:all .3s ease;-moz-transition:all .3
 
 .purchase_toggle_buttons .fa { margin-right:3px }
 
-section .quick-contact{color:#fff;background-color:transparent;text-align:center}
-section .contact a{-webkit-border-radius:2px;-moz-border-radius:2px;-o-border-radius:2px;border-radius:2px;display:block;background-color:rgba(255,255,255,0.25);font-size:18px;text-align:center;color:#fff;padding:7px}
-section .contact a:hover{background-color:rgba(255,255,255,0.85);text-decoration:none}
-section .contact a.skype:hover,.fa-skype{color:#00aff0}
-section .contact a.google:hover,.fa-google-plus{color:#dd4b39}
-section .contact a.linkedin:hover,.fa-linkedin{color:#0e76a8}
-section .contact a.twitter:hover,.fa-twitter{color:#00acee}
-section .contact a.pinterest:hover,.fa-pinterest{color:#dd4b39}
-section .contact a.instagram:hover,.fa-instagram{color:#00acee}
-section .contact a.facebook:hover,.fa-facebook{color:#00acee}
-
-/* carousel */
-#quote-carousel {
-  padding: 0 10px 10px 10px;
-  margin-top: 30px 0px 0px;
-}
-
-.item blockquote {
-    border-left: none; 
-    margin: 0;
-}
-
-.item blockquote img {
-    margin-bottom: 10px;
-}
-
-.item blockquote p:before {
-    content: "\f10d";
-    font-family: 'Fontawesome';
-    float: left;
-    margin-right: 10px;
-}
-.item blockquote small,
-.item blockquote small:before {
-  content: '';
-  color: #3c444c;
-}
-
 .box .fa {
     font-size:18px;
 	margin-right:0px; 
@@ -669,7 +623,7 @@ section .contact a.facebook:hover,.fa-facebook{color:#00acee}
 	color: #fff !important; 
 }
 .box > .icon:hover > .image > i { 
-    color: #d3d3d3 !important;
+    color: #fff !important; 
 }
 
 .box > .icon > .info { 
@@ -680,8 +634,6 @@ section .contact a.facebook:hover,.fa-facebook{color:#00acee}
 	   -moz-border-radius: 3px;
 	     -o-border-radius: 3px;
 	        border-radius: 3px;
-  min-height: 17em;
-  max-height: 17em;
 }
 
 .box > .icon:hover > .info { 
@@ -691,7 +643,7 @@ section .contact a.facebook:hover,.fa-facebook{color:#00acee}
 .box > .icon > .info > h3.title { 
     font-family: "Roboto",sans-serif !important; 
 	font-size: 16px; 
-	color: #f5f5f5;
+	color: #fff; 
 	font-weight: 600; 
 	text-transform: uppercase; 
 }
@@ -699,31 +651,27 @@ section .contact a.facebook:hover,.fa-facebook{color:#00acee}
     font-family: "Roboto",sans-serif !important; 
 	font-size: 13px; 
 	font-weight: 400; 
-	color: #f5f5f5;
+	color: #fff; 
 	line-height: 1.5em; 
 	margin: 20px;
-  min-height: 9em;
-  max-height: 9em;
 }
 .box > .icon:hover > .info > h3.title, 
 .box > .icon:hover > .info > p, 
 .box > .icon:hover > .info > .more > a { 
-    color: #222;
-  color: #d3d3d3;
-
+    color: #222; 
 }
 .box > .icon > .info > .more a { 
     font-family: "Roboto",sans-serif !important; 
 	font-size: 12px; 
-	color: #f5f5f5;
-	line-height: 12px;
+	color: #fff; 
+	line-height: 12px; 
 	text-transform: uppercase; 
 	text-decoration: none; 
 }
 .box > .icon:hover > .info > .more > a { 
-    color: #f33f3f;
+    color: #fff; 
 	padding: 8px 10px; 
-	/*background-color: #f33f3f;*/
+	background-color: #f33f3f; 
 }
 .box .space { 
     height: 30px; 
@@ -745,7 +693,7 @@ section .contact a.facebook:hover,.fa-facebook{color:#00acee}
 .input-group-btn {
     color: #FFF;
     background-color: #f33f3f;
-    border-color: #FF474C;
+    border-color: #ff474c;
 	border-radius: 0px;
 	box-shadow: none;
 	text-shadow: none;
@@ -770,7 +718,7 @@ section .contact a.facebook:hover,.fa-facebook{color:#00acee}
 
 .widget input[type="text"]:focus,
 .form-control:focus {
-    border-color: #FF474C;
+    border-color: #ff474c;
 	box-shadow: none;
 }
 
@@ -789,157 +737,54 @@ section .contact a.facebook:hover,.fa-facebook{color:#00acee}
 	margin: 0;
 	padding: 0;
 }
-/*===========Dajia styles START==========*/
-.lead {
-  text-shadow: rgb(0, 0, 0) 1px 1px 1px;
-}
-label {
-  font-weight: normal;
-}
-.required {
-  color:#dd3333;
-}
-.hentry {
-  font-size: 1.75rem;
+
+/* BBPress customization */
+#bbpress-forums div.bbp-search-form {
+    margin-bottom: 10px;
 }
 
-.site-footer .widget-title, .site-footer .widget-title a, .site-footer .wp-caption-text, .site-info a {
-  color: #fff;
+.bbp-search-form input[type="submit"] {
+    font-size: 14px;
+    line-height: 1;
+	color: #fff;
+	background-color: #3c444c;
+   -webkit-border-radius: 3px;
+	  -moz-border-radius: 3px;
+	    -o-border-radius: 3px;
+	       border-radius: 3px;
+    box-shadow: none;
+	text-shadow: none;
+	padding: 0.4em 1em;
 }
-footer a, footer a:hover {
-  background-color: transparent;
-  color: #dd3333;
+#subscription-toggle {
+   margin-bottom: 10px;
+   float: right;
+   background-color: #3c444c;
+   border-color: #3c444c;
+   -webkit-border-radius: 3px;
+	  -moz-border-radius: 3px;
+	    -o-border-radius: 3px;
+	       border-radius: 3px;
+   padding: 0.5em 1em 0.6em;
 }
-.sep {
-  padding:0 10px;
-}
-textarea {
-  width:388px;
-}
-
-
-.box a .fa {
-  font-size:18px;
-  margin-right:0px;
-  padding-left: 3px;
-}
-
-.box a > .icon {
-  text-align: center;
-  position: relative;
-}
-.box a > .icon > .image {
-  position: relative;
-  z-index: 2;
-  margin: auto;
-  width: 88px;
-  height: 88px;
-  border: 8px solid #3c444c;
-  line-height: 88px;
-  border-radius: 50%;
-  background-color: #f33f3f;
-  vertical-align: middle;
-}
-.box a > .icon:hover > .image {
-  background-color: #333;
-}
-.box a > .icon > .image > i {
-  font-size: 36px !important;
-  color: #fff !important;
-}
-.box a > .icon:hover > .image > i {
-  color: #d3d3d3 !important;
+.bbp-submit-wrapper .button,
+#subscription-toggle a {
+   color: #fff;
 }
 
-.box a > .icon > .info {
-  margin-top: -24px;
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 15px 0 10px 0;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
-  min-height: 17em;
-  max-height: 17em;
+.bbp-submit-wrapper .button {
+    background-color: #3c444c;
+	border-color: #3c444c;
+	box-shadow: none;
+    padding: 6px 14px 8px;
+    font-size: 14px;
 }
-
-.box a > .icon:hover > .info {
-  background: rgba(0, 0, 0, 0.04);
-  color: #fff;
+#subscription-toggle:hover,
+.bbp-search-form input[type="submit"]:hover,
+.bbp-submit-wrapper .button:hover {
+    background-color: #f33f3f;
+	border-color: #f33f3f;
 }
-.box a > .icon > .info > h3.title {
-  font-family: "Roboto",sans-serif !important;
-  font-size: 16px;
-  color: #f5f5f5;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.box a > .icon > .info > p {
-  font-family: "Roboto",sans-serif !important;
-  font-size: 14px;
-  font-weight: 400;
-  color: #f5f5f5;
-  line-height: 1.5em;
-  margin: 20px;
-  min-height: 9.5em;
-  max-height: 9.5em;
-}
-.box a > .icon:hover > .info > h3.title,
-.box a > .icon:hover > .info > p,
-.box a > .icon:hover > .info > .more > a {
-  color: #222;
-  color: #d3d3d3;
-
-}
-.box a > .icon > .info > .more a {
-  font-family: "Roboto",sans-serif !important;
-  font-size: 12px;
-  color: #f5f5f5;
-  line-height: 12px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-.box a > .icon:hover > .info > .more > a {
-  color: #f33f3f;
-  padding: 8px 10px;
-  /*background-color: #f33f3f;*/
-}
-.box a .space {
-  height: 30px;
-}
-
-input[type="submit"] {
-  border: 1px solid #dd3300;
-  border-color: #dd3300;
-  border-radius: 0px;
-  background: #dd3300;
-  box-shadow: none;
-  color: #f5f5f5;
-  cursor: pointer;
-  -webkit-appearance: button;
-  font-size: 1.6rem;
-  line-height: 1;
-  padding: .6em 1em .6em;
-  text-shadow: none;
-}
-
-input[type="submit"]:hover {
-  border-color: #dd3300;
-  box-shadow: none;
-}
-div.wpcf7-validation-errors {
-  display: none !important;
-}
-div.wpcf7-mail-sent-ok {
-  border:0;
-}
-.box a .fa {
-  padding-left: 0;
-}
-h1 {
-  line-height: 125%;
-}
-/*===========Dajia styles END==========*/
 
 /**
   MEDIA QUERIES
@@ -958,56 +803,42 @@ h1 {
 	width: device-width;
 }
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-    
-}
-
-@media (min-width: 768px) and (max-width: 996px) {
-  .box a > .icon > .info {
-    min-height: 19em;
-    max-height: 19em;
-  }
-}
-
 /* Small devices (tablets, up to 768px) */
 @media (max-width: 768px) { 
 
-   .video-section h1{
-     font-size:35px;
-   }
-   .video-section h3{
-     font-size: 18px;
-   }
+    #header-image,
+    #header-image img {
+	    max-height: 380px;
+    }
+
+    .header-section  {
+        max-height: 340px;
+    }
    
-   span.round-tabs{
-    width: 55px;
-    height: 55px;
-    line-height: 37px;
-    font-size: 22px;
-   }
-   .round-tabs .fa {
-    font-size: 18px;
-    margin-right: 1px;
-   }
-   .nav-tabs > li a{
-   width: 55px;
-   height: 55px;
-   margin: 20px auto;
-  }
-  .tab-pane{
-   padding-top: 30px;
-  }
-  .tab-content .head{
-    font-size: 18px;
-  }
-  textarea, input[type=text],input[type=email] {
-    width:300px;
-  }
-.navbar-header.pull-right {
-  float:left !important;
+    .header-section h1{
+        font-size:35px;
+    }
+    .header-section h3{
+        font-size: 18px;
+    }
 }
-h1 {
-  font-size: 26px;
-}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 568px) { 
+
+    #header-image,
+    #header-image img {
+	    max-height: 320px;
+    }
+
+    .header-section  {
+        max-height: 280px;
+    }
+   
+    .header-section h1{
+        font-size: 28px;
+    }
+    .header-section h3{
+        font-size: 16px;
+    }
 }

@@ -48,6 +48,16 @@ function unconditional_enhanced_image_navigation( $url, $id ) {
 }
 add_filter( 'attachment_link', 'unconditional_enhanced_image_navigation', 10, 2 );
 
+/*
+ * wp_title() support for WordPress versions prior to 4.1
+*/
+if ( ! function_exists( '_wp_render_title_tag' ) ) :
+function unconditional_render_title() { ?>
+    <title><?php wp_title( '|', true, 'right' ); ?></title>
+<?php }
+add_action( 'wp_head', 'unconditional_render_title' );
+
+
 /**
  * Filters wp_title to print a neat <title> tag based on what is being viewed.
  */
@@ -72,3 +82,4 @@ function unconditional_wp_title( $title, $sep ) {
 	return $title;
 }
 add_filter( 'wp_title', 'unconditional_wp_title', 10, 2 );
+endif;

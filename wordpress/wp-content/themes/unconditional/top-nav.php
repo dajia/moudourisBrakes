@@ -1,18 +1,14 @@
 <nav class="navbar navbar-trans navbar-static-top" role="navigation">
   <div class="container">
-    <?php
-    wp_nav_menu( array( 'menu' => 'User menu', 'items_wrap' =>
-      '<ul class="nav navbar-nav pull-right">%3$s</ul>'
-    ));
-    ;?>
-    <div class="navbar-header pull-right">
+    		
+    <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-
+      
     </div>
     <?php
         wp_nav_menu( array(
@@ -26,7 +22,7 @@
             'walker'            => new wp_bootstrap_navwalker())
         );
     ?>
-
+	
+	
   </div>
 </nav>
-

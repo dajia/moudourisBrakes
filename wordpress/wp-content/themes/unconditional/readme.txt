@@ -7,8 +7,8 @@ Coded by Zulfikar Nore
 Brought to you by WP Strap Code, http://wpstrapcode.com/
 
 Requires at least:	3.6.0
-Tested up to:		4.1-RC1
-Stable tag:			1.0.4
+Tested up to:		4.1
+Stable tag:			1.0.8
 
 == Copyright & Licenses ==
 Unconditional, Copyright 2013 WPStrapCode.com
@@ -20,7 +20,7 @@ License: MIT - http://www.bootply.com/LICENSE.txt
 
 And
 
-Unconditional is built with code snippets from http://www.bootsnipp.com
+built with code snippets from http://www.bootsnipp.com
 Copyright: (c) 2013 Bootsnipp.com
 Licensed under MIT - http://bootsnipp.com/license
 
@@ -81,4 +81,6 @@ multiple color selectors for the various elements (via an enhanced customizer se
 Known Limitations:
 
 Menu: Site menu does not display by default - you will need to allocate a menu to the theme location.
+Menu: With Bootstrap the top level item on a dropdown menu is only meant as a pointer i.e. does not link out.
+It is therefore recommended to use a custom link leaving the url blank to act as the pointer item and then add other pages to it as submenu items.
 Header: Content within the header is governed by the set header height - it is therefore recommended to keep these i.e. Site Title, Site description and CTA contents short and concise

@@ -2,14 +2,14 @@
 /**
  */
 do_action( 'unconditional_related_projects_before' );
-$related_projects = Unconditional::get_related_projects();
+$unconditional_rel_proj = Unconditional::get_related_projects();
 ?>
-<?php if ( $related_projects->have_posts() && $related_projects->found_posts >= 2 ) : ?>
+<?php if ( $unconditional_rel_proj->have_posts() && $unconditional_rel_proj->found_posts >= 2 ) : ?>
 
 <div class="related-content">
 	<h3 class="related-content-title"><?php _e( 'Our other projects', 'unconditional' ); ?></h3>
 
-	<?php while ( $related_projects->have_posts() ) : $related_projects->the_post(); ?>
+	<?php while ( $unconditional_rel_proj->have_posts() ) : $unconditional_rel_proj->the_post(); ?>
 
 		<article id="post-<?php the_ID(); ?>" class="hentry">
 			<header class="entry-header">

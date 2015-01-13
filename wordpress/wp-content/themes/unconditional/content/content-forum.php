@@ -21,9 +21,6 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-	<?php if ( !is_front_page() ) : ?>
-	<?php edit_post_link( __( 'Edit', 'unconditional' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
-	<?php endif ?>
 
 	<div class="clearfix"></div>
 </article><!-- #post-## -->

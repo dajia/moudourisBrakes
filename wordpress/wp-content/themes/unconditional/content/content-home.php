@@ -10,6 +10,11 @@
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">','</a></h1>' ); ?>	
 	</header><!-- .entry-header -->
+	<?php if ( get_theme_mod( 'unconditional_home_meta' ) != 0 ) { ?>
+	<div class="entry-meta">
+		<?php unconditional_post_meta(); ?>
+	</div><!-- .entry-meta -->
+	<?php } ?>
 	
 	<div class="entry-summary">
 	<?php if (has_post_thumbnail()) { ?>
@@ -19,7 +24,6 @@
 		</a>	
 	</div>
 	<?php } ?>
-		<?php //the_excerpt(); ?>
 		<?php echo unconditional_homefeed_excerpt(); ?>
 		<?php
 			wp_link_pages( array(

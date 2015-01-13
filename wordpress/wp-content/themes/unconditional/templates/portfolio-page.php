@@ -32,32 +32,32 @@ get_header(); ?>
 		endif;
 
 				if ( get_query_var( 'paged' ) ) :
-					$paged = get_query_var( 'paged' );
+					$unconditional_paged = get_query_var( 'paged' );
 				elseif ( get_query_var( 'page' ) ) :
-					$paged = get_query_var( 'page' );
+					$unconditional_paged = get_query_var( 'page' );
 				else :
-					$paged = 1;
+					$unconditional_paged = 1;
 				endif;
 
-				$posts_per_page = get_option( 'jetpack_portfolio_posts_per_page', '10' );
+				$unconditional_portfolio_count = get_option( 'jetpack_portfolio_posts_per_page', '10' );
 
 				$args = array(
 					'post_type'      => 'jetpack-portfolio',
-					'paged'          => $paged,
-					'posts_per_page' => $posts_per_page,
+					'paged'          => $unconditional_paged,
+					'posts_per_page' => $unconditional_portfolio_count,
 				);
 
-				$project_query = new WP_Query ( $args );
+				$unconditional_project_query = new WP_Query ( $args );
 
-				if ( post_type_exists( 'jetpack-portfolio' ) && $project_query -> have_posts() ) :
+				if ( post_type_exists( 'jetpack-portfolio' ) && $unconditional_project_query -> have_posts() ) :
 
-					while ( $project_query -> have_posts() ) : $project_query -> the_post();
+					while ( $unconditional_project_query -> have_posts() ) : $unconditional_project_query -> the_post();
 
 						get_template_part( 'content/content', 'portfolio' );
 
 					endwhile;
 
-					unconditional_pagination( $project_query->max_num_pages );
+					unconditional_pagination( $unconditional_project_query->max_num_pages );
 
 					wp_reset_postdata();
 

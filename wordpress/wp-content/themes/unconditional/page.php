@@ -19,7 +19,7 @@ get_header(); ?>
           <?php if ( !is_active_sidebar( 'page' ) ) : ?>
 		  <div class="col-sm-12">
 		  <?php else : ?>
-		  <div class="col-sm-12">
+		  <div class="col-sm-8">
 		  <?php endif; ?>
         <?php do_action( 'unconditional_before_page' ); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -36,9 +36,9 @@ get_header(); ?>
         <?php do_action( 'unconditional_after_page' ); ?>
 		</div>
           <?php if ( is_active_sidebar( 'page' ) ) { ?>
-		  <!--<div class="col-sm-4">
-		       <?php //get_sidebar( 'page' ); ?>
-		  </div>-->
+		  <div class="col-sm-4">
+		       <?php get_sidebar( 'page' ); ?>
+		  </div>
 		  <?php } ?>
         </div>
       </div>
