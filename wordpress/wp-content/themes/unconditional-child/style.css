@@ -1037,3 +1037,7 @@ h1 {
 .singular .page-header, .archive .page-header, .single-project .page-header {
  padding-top: 20px;
 }
+
+h1 {
+ display:none;
+}
