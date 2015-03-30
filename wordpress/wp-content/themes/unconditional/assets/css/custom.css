@@ -1,5 +1,3 @@
-@import url(//fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
-
 html,body {
 	height:100%;
 	font-family: 'Roboto Condensed', sans-serif;
@@ -53,7 +51,6 @@ body.admin-bar #header-image {
 }
 
 #header-image {
-	max-width: 3200px;	
 	max-height: 520px;
 	width: 100%;
 	height: 100%;
@@ -64,6 +61,7 @@ body.admin-bar #header-image {
 #header-image img {
 	max-height: 520px;
 	height: 100%;
+	width: 100%;
 }
 
 .header-section  {
@@ -677,7 +675,7 @@ a{transition:all .3s ease;-webkit-transition:all .3s ease;-moz-transition:all .3
     height: 30px; 
 }
 
-.widget input, 
+.widget input[type="text"], 
 .widget textarea, 
 .widget .uneditable-input,
 #search .search-field {
@@ -756,7 +754,8 @@ a{transition:all .3s ease;-webkit-transition:all .3s ease;-moz-transition:all .3
 	text-shadow: none;
 	padding: 0.4em 1em;
 }
-#subscription-toggle {
+#subscription-toggle, 
+#favorite-toggle {
    margin-bottom: 10px;
    float: right;
    background-color: #3c444c;
@@ -768,7 +767,8 @@ a{transition:all .3s ease;-webkit-transition:all .3s ease;-moz-transition:all .3
    padding: 0.5em 1em 0.6em;
 }
 .bbp-submit-wrapper .button,
-#subscription-toggle a {
+#subscription-toggle a,
+#favorite-toggle a {
    color: #fff;
 }
 
@@ -780,10 +780,18 @@ a{transition:all .3s ease;-webkit-transition:all .3s ease;-moz-transition:all .3
     font-size: 14px;
 }
 #subscription-toggle:hover,
+#favorite-toggle:hover,
 .bbp-search-form input[type="submit"]:hover,
 .bbp-submit-wrapper .button:hover {
     background-color: #f33f3f;
 	border-color: #f33f3f;
+}
+
+li.bbp-header div.bbp-topic-content span#subscription-toggle, 
+li.bbp-header div.bbp-topic-content span#favorite-toggle, 
+li.bbp-header div.bbp-reply-content span#subscription-toggle, 
+li.bbp-header div.bbp-reply-content span#favorite-toggle {
+    margin-left: 10px;
 }
 
 /**

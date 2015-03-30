@@ -13,14 +13,15 @@ get_header(); ?>
         <div class="content col-sm-10 col-sm-offset-1">
         <?php do_action( 'unconditional_before_page' );
 			 while ( have_posts() ) : the_post();
-
-				get_template_part( 'content/content', 'page' );
-
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || '0' != get_comments_number() )
-						comments_template();
-				
-
+            if ( is_front_page() ) {
+				get_template_part( 'content/content', 'front' );
+			} else {
+			    get_template_part( 'content/content', 'page' );
+			}
+			// If comments are open or we have at least one comment, load up the comment template
+				if ( comments_open() || '0' != get_comments_number() )
+					comments_template();
+			
 			endwhile; // end of the loop.
             do_action( 'unconditional_after_page' ); ?>
 		</div>

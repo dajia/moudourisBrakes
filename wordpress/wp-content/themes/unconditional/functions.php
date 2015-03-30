@@ -94,7 +94,7 @@ public static function after_setup_theme() {
 		'default-attachment' => 'fixed',
 		'default-repeat'     => 'none',
 		'default-position-x' => 'center',
-		'default-image'      => '%1$s/assets/images/bg_suburb.jpg',
+		'default-image'      => get_template_directory_uri() . '/assets/images/bg_suburb.jpg',
 	) ) );
 
 	do_action( 'unconditional_after_setup_theme' );

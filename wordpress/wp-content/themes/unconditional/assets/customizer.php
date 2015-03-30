@@ -43,7 +43,7 @@ function unconditional_customize_register( $wp_customize ) {
 	
 	$wp_customize->add_section( 'unconditional_services_options' , array(
        'title'       => __('Unconditional Services Options','unconditional'),
-	   'description' => sprintf( __( 'Use the following settings to control the Service Boxes section. A list of the available icons can be found here: <a href="%1$s" target="_blank" />FontAwesome Cheatsheet</a> - You need only insert the name of the icon i.e. flag instead of fa-flag', 'unconditional' ), esc_url('http://fortawesome.github.io/Font-Awesome/cheatsheet/') ),
+	   'description' => sprintf( __( 'Use the following settings to control the Service Boxes section. A list of the available icons can be found here: <a href="%1$s" target="_blank" />http://fortawesome.github.io/Font-Awesome/cheatsheet/</a> - You need only insert the name of the icon i.e. flag instead of fa-flag', 'unconditional' ), esc_url('http://fortawesome.github.io/Font-Awesome/cheatsheet/') ),
        'priority'    => 35,
     ) );
 				
@@ -75,6 +75,25 @@ function unconditional_customize_register( $wp_customize ) {
         }
     }
 	
+	$wp_customize->add_setting('unconditional_logo_image', array(
+        'default-image'  => '',
+		'sanitize_callback' => 'esc_url_raw',
+		'capability' => 'edit_theme_options',
+    ));
+ 
+    $wp_customize->add_control(
+        new WP_Customize_Image_Control(
+            $wp_customize,
+            'tanzanite_logo',
+            array(
+               'label'    => __( 'Upload a logo', 'unconditional' ),
+               'section'  => 'title_tagline',
+			   'priority' => 21,
+               'settings' => 'unconditional_logo_image',
+            )
+        )
+    );
+	
     // Intro Section Settings
 	$wp_customize->add_setting(
         'unconditional_home_intro_visibility', array (
@@ -102,7 +121,7 @@ function unconditional_customize_register( $wp_customize ) {
         'unconditional_intro_text_visibility',
     array(
         'type'     => 'checkbox',
-        'label'    => __('Hide the home page intro section?', 'unconditional'),
+        'label'    => __('Hide the home page intro text?', 'unconditional'),
         'section'  => 'unconditional_intro_options',
 		'priority' => 1,
         )
