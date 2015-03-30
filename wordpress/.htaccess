@@ -3,10 +3,13 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
+<<<<<<< HEAD
 
 RewriteCond /Users/dajia/Development/moudourisbrakes/wordpress/wp-content/sitemaps%{REQUEST_URI} -f
 RewriteRule \.xml(\.gz)?$ /wp-content/sitemaps%{REQUEST_URI} [L]
 
+=======
+>>>>>>> 20063d63449d3efa55d2b0d69f6d3105620c7215
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
