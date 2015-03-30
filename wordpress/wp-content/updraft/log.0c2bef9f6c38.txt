@@ -1,0 +1,9 @@
+0000.001 (0) Opened log file at time: Mon, 30 Mar 2015 08:16:28 +0000 on http://moudourisbrakes:8888
+0000.003 (0) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.9.60 WP: 4.1 PHP: 5.5.18 (Darwin dajias-MacBook-Pro-2.local 14.0.0 Darwin Kernel Version 14.0.0: Fri Sep 19 00:26:44 PDT 2014; root:xnu-2782.1.97~2/RELEASE_X86_64 x86_64) MySQL: 5.5.38 Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 25.7M | 26.3M) multisite: N mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.004 (0) Free space on disk containing Updraft's temporary directory: 30421.7 Mb
+0000.008 (0) Tasks: Backup files:  (schedule: monthly) Backup DB: 1 (schedule: monthly)
+0000.009 (0) Processed schedules. Tasks now: Backup files:  Backup DB: 
+0000.014 (0) Decremented the semaphore (fd) by 1
+0000.015 (0) Semaphore (fd) still locked
+0000.016 (0) No email will be sent - this backup set was empty.
+0000.017 (0) The backup apparently succeeded and is now complete
