@@ -8,7 +8,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">','</a></h1>' ); ?>	
+		<?php the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">','</a></h1>' ); ?>
 	</header><!-- .entry-header -->
 	<?php if ( get_theme_mod( 'unconditional_home_meta' ) != 0 ) { ?>
 	<div class="entry-meta">
@@ -21,7 +21,7 @@
 	<div class="summary-thumbnail">
 		<a href="<?php the_permalink(); ?>">
 		   <?php the_post_thumbnail(); ?>
-		</a>	
+		</a>
 	</div>
 	<?php } ?>
 		<?php echo unconditional_homefeed_excerpt(); ?>
@@ -34,8 +34,7 @@
 		<div class="read-more">
 		    <a href="<?php echo esc_url( get_permalink() ) ?>"><?php _e( 'Continued &raquo;', 'unconditional'); ?></a>
 		</div>
-										
 		
-	</div><!-- .entry-summary -->    
-			
+	</div><!-- .entry-summary -->
+
 </article><!-- #post-## -->

@@ -23,10 +23,7 @@ function unconditional_font_url() {
 		$fonts[] = 'Roboto Condensed:400italic,700italic,400,700';
 	}
 	
-	/*
-	 * Translators: To add an additional character subset specific to your language,
-	 * translate this to 'greek', 'cyrillic', 'devanagari' or 'vietnamese'. Do not translate into your own language.
-	 */
+	/* translators: To add an additional character subset specific to your language, translate this to 'greek', 'cyrillic', 'devanagari' or 'vietnamese'. Do not translate into your own language. */
 	$subset = _x( 'no-subset', 'Add new subset (greek, cyrillic, devanagari, vietnamese)', 'conditional' );
 
 	if ( 'cyrillic' == $subset ) {
@@ -39,10 +36,14 @@ function unconditional_font_url() {
 		$subsets .= ',vietnamese';
 	}
 
-	return add_query_arg( array(
-		'family' => urlencode( implode( '|', $fonts ) ),
-		'subset' => urlencode( $subsets ),
-	), '//fonts.googleapis.com/css' );
+	if ( $fonts ) {
+		$fonts_url = add_query_arg( array(
+			'family' => urlencode( implode( '|', $fonts ) ),
+			'subset' => urlencode( $subsets ),
+		), '//fonts.googleapis.com/css' );
+	}
+
+	return $fonts_url;
 } 
  
 function unconditional_scripts() {

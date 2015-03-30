@@ -1,9 +1,26 @@
 Theme Name:   Unconditional
 File Name:    Changelog
-Tested up to: 4.1
-Stable tag:	  1.0.8
+Tested up to: 4.1.1
+Stable tag:	  1.1.2
 
 == Changelog ==
+
+= 1.1.2 =
+* Bug fix on widget input misalignment.
+* Bug fix on header image falling short on width for large screens.
+
+= 1.1.1 =
+* Fixed bug on background image not appearing in theme customizer.
+
+= 1.1.0 =
+* Fixed bug on home/frontpage CTA output triggers.
+* Added the CTA button text output as a change trigger.
+* Fixed missing prefixes for global variables in cta.php and boxes.php
+
+= 1.0.9 =
+* Added option to upload header logo.
+* Corrected the Google font enqueue function.
+* More CSS improvements for BBPress support.
 
 = 1.0.8 =
 * Fixed bug on header image being returned shorter than the container.

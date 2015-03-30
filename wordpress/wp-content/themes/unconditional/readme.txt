@@ -7,8 +7,8 @@ Coded by Zulfikar Nore
 Brought to you by WP Strap Code, http://wpstrapcode.com/
 
 Requires at least:	3.6.0
-Tested up to:		4.1
-Stable tag:			1.0.8
+Tested up to:		4.1.1
+Stable tag:			1.1.2
 
 == Copyright & Licenses ==
 Unconditional, Copyright 2013 WPStrapCode.com

@@ -74,7 +74,7 @@ function unconditional_header_style() {
 		else :
 	?>
 		h1.v-center a,
-        .site-description {
+        h3.site-description {
 			color: #<?php echo $header_text_color; ?>;
 		}
 	<?php endif; ?>
