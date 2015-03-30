@@ -1,0 +1,283 @@
+0000.001 (0) Opened log file at time: Mon, 30 Mar 2015 07:14:31 +0000 on http://moudourisbrakes:8888
+0000.005 (0) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.9.60 WP: 4.1 PHP: 5.5.18 (Darwin dajias-MacBook-Pro-2.local 14.0.0 Darwin Kernel Version 14.0.0: Fri Sep 19 00:26:44 PDT 2014; root:xnu-2782.1.97~2/RELEASE_X86_64 x86_64) MySQL: 5.5.38 Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 25.4M | 26M) multisite: N mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.007 (0) Free space on disk containing Updraft's temporary directory: 30493.2 Mb
+0000.013 (0) Tasks: Backup files: 1 (schedule: manual) Backup DB: 1 (schedule: manual)
+0000.027 (0) Requesting semaphore lock (fd)
+0000.037 (0) Set semaphore last lock (fd) time to 2015-03-30 07:14:31
+0000.038 (0) Semaphore lock (fd) complete
+0000.044 (0) Backup run: resumption=0, nonce=155d0ee7340d, begun at=1427699671 (0s ago), job type=backup
+0000.046 (0) Scheduling a resumption (1) after 300 seconds (1427699971) in case this run gets aborted
+0000.067 (0) Checking if we have a zip executable available
+0000.068 (0) Testing: /usr/bin/zip
+0000.076 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.078 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.079 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.080 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=127) (out=105) (deflated 17%)
+0000.082 (0) Output: total bytes=127, compressed=105 -> 17% savings
+0000.092 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=134) (out=109) (deflated 19%)
+0000.094 (0) Output: total bytes=261, compressed=214 -> 18% savings
+0000.115 (0) Working binary zip found: /usr/bin/zip
+0000.118 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.119 (0) Creation of backups of directories: beginning
+0000.124 (0) Beginning creation of dump of plugins (split every: 500 Mb)
+0000.265 (0) Total entities for the zip file: 258 directories, 1828 files (0 skipped as non-modified), 26 Mb
+0000.273 (0) Zip: backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-plugins.zip.tmp: 100 files added (on-disk size: 0 Kb)
+0000.281 (0) Zip: backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-plugins.zip.tmp: 200 files added (on-disk size: 0 Kb)
+0000.289 (0) Zip: backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-plugins.zip.tmp: 300 files added (on-disk size: 0 Kb)
+0000.296 (0) Zip: backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-plugins.zip.tmp: 400 files added (on-disk size: 0 Kb)
+0000.303 (0) Zip: backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-plugins.zip.tmp: 500 files added (on-disk size: 0 Kb)
+0000.304 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (7.3 Mb, 1828 files batched, 501 (501) added so far); re-opening (prior size: 0 Kb)
+0001.042 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-plugins.zip.tmp: size is now: 3.70 Mb
+0001.054 (0) Zip: backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-plugins.zip.tmp: 600 files added (on-disk size: 3743.2 Kb)
+0001.064 (0) Zip: backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-plugins.zip.tmp: 700 files added (on-disk size: 3743.2 Kb)
+0001.072 (0) Zip: backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-plugins.zip.tmp: 800 files added (on-disk size: 3743.2 Kb)
+0001.079 (0) Zip: backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-plugins.zip.tmp: 900 files added (on-disk size: 3743.2 Kb)
+0001.091 (0) Zip: backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-plugins.zip.tmp: 1000 files added (on-disk size: 3743.2 Kb)
+0001.093 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (15.5 Mb, 1828 files batched, 501 (1002) added so far); re-opening (prior size: 3743.2 Kb)
+0002.880 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-plugins.zip.tmp: size is now: 10.20 Mb
+0002.896 (0) Zip: backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-plugins.zip.tmp: 1100 files added (on-disk size: 10395.6 Kb)
+0002.903 (0) Zip: backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-plugins.zip.tmp: 1200 files added (on-disk size: 10395.6 Kb)
+0002.910 (0) Zip: backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-plugins.zip.tmp: 1300 files added (on-disk size: 10395.6 Kb)
+0002.917 (0) Zip: backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-plugins.zip.tmp: 1400 files added (on-disk size: 10395.6 Kb)
+0002.923 (0) Zip: backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-plugins.zip.tmp: 1500 files added (on-disk size: 10395.6 Kb)
+0002.925 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (1.7 Mb, 1828 files batched, 501 (1503) added so far); re-opening (prior size: 10395.6 Kb)
+0003.287 (0) Zip: backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-plugins.zip.tmp: 1600 files added (on-disk size: 11093.6 Kb)
+0003.294 (0) Zip: backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-plugins.zip.tmp: 1700 files added (on-disk size: 11093.6 Kb)
+0003.301 (0) Zip: backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-plugins.zip.tmp: 1800 files added (on-disk size: 11093.6 Kb)
+0003.774 (0) Created plugins zip (0) - 11698.1 Kb in 3.6 s (3207.8 Kb/s) (SHA1 checksum: 21994b93649d373098f85aeef9e45956f173a41b)
+0003.778 (0) Beginning creation of dump of themes (split every: 500 Mb)
+0003.805 (0) Total entities for the zip file: 42 directories, 333 files (0 skipped as non-modified), 6.5 Mb
+0003.811 (0) Zip: backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-themes.zip.tmp: 100 files added (on-disk size: 0 Kb)
+0003.818 (0) Zip: backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-themes.zip.tmp: 200 files added (on-disk size: 0 Kb)
+0003.825 (0) Zip: backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-themes.zip.tmp: 300 files added (on-disk size: 0 Kb)
+0004.365 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-themes.zip.tmp: size is now: 4.40 Mb
+0004.446 (0) Created themes zip (0) - 4549.5 Kb in 0.7 s (6830.3 Kb/s) (SHA1 checksum: 22d3afc19b98ec7171b6dab6e8d1ff4c46b40485)
+0004.451 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone
+0004.453 (0) Looking for candidates to back up in: /Users/dajia/Development/moudourisbrakes/wordpress/wp-content/uploads
+0004.454 (0) finding files: 2014: adding to list (1)
+0004.455 (0) finding files: 2015: adding to list (2)
+0004.457 (0) finding files: photo-gallery: adding to list (3)
+0004.458 (0) Beginning creation of dump of uploads (split every: 500 Mb)
+0004.476 (0) Total entities for the zip file: 8 directories, 199 files (0 skipped as non-modified), 40.4 Mb
+0004.485 (0) Zip: backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-uploads.zip.tmp: 100 files added (on-disk size: 0 Kb)
+0004.490 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 Mb added on this batch (26.6 Mb, 199 files batched, 141 (141) added so far); re-opening (prior size: 0 Kb)
+0006.469 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-uploads.zip.tmp: size is now: 26.50 Mb
+0006.477 (0) A useful amount of data was added after this amount of zip processing: 2.5 s (normalised: 2.4 s, rate: 10682.7 Kb/s)
+0006.480 (0) Performance is good - will increase the amount of data we attempt to batch (time=2.54634904861, normalised_time=2.39639078865, max_time=-1, data points known=0, old_max_bytes=26214400, new_max_bytes=65634703)
+0007.567 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-uploads.zip.tmp: size is now: 40.30 Mb
+0008.144 (0) Created uploads zip (0) - 41277.7 Kb in 3.7 s (11207.5 Kb/s) (SHA1 checksum: b35c13b791166b65a92230bd3d74ff6d6558d37f)
+0008.148 (0) Beginning backup of other directories found in the content directory (index: 0)
+0008.149 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups
+0008.150 (0) Looking for candidates to back up in: /Users/dajia/Development/moudourisbrakes/wordpress/wp-content
+0008.152 (0) finding files: gallery: adding to list (1)
+0008.153 (0) finding files: index.php: adding to list (2)
+0008.154 (0) finding files: languages: adding to list (3)
+0008.155 (0) finding files: plugins: skipping: this is the plugins directory
+0008.156 (0) finding files: themes: skipping: this is the themes directory
+0008.157 (0) finding files: updraft: skipping: this is the updraft directory
+0008.158 (0) finding files: upgrade: skipping: excluded by options
+0008.159 (0) finding files: uploads: skipping: this is the uploads directory
+0008.166 (0) Total entities for the zip file: 6 directories, 23 files (0 skipped as non-modified), 3.1 Mb
+0008.412 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-others.zip.tmp: size is now: 2.50 Mb
+0008.464 (0) Created others zip (0) - 2547.6 Kb in 0.3 s (8414.7 Kb/s) (SHA1 checksum: 9d0e47a9f0c6f0953f0d904b343c3bc3f11d0a41)
+0008.472 (0) Saving backup status to database (elements: 8)
+0008.474 (0) Beginning creation of database dump (WordPress DB)
+0008.481 (0) Testing: /usr/local/bin/mysqldump
+0008.640 (0) Binary mysqldump: error (code: 2)
+0008.679 (0) Table wp_options: Total expected rows (approximate): 271
+0008.797 (0) Table wp_options: Total rows added: 236 in 0.12 seconds
+0008.800 (0) Table wp_options: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_options.table.gz - 150.1 Kb)
+0008.806 (0) Table wp_users: Total expected rows (approximate): 1
+0008.810 (0) Table wp_users: Total rows added: 1 in 0.00 seconds
+0008.812 (0) Table wp_users: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_users.table.gz - 0.5 Kb)
+0008.820 (0) Table wp_usermeta: Total expected rows (approximate): 25
+0008.825 (0) Table wp_usermeta: Total rows added: 25 in 0.00 seconds
+0008.827 (0) Table wp_usermeta: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_usermeta.table.gz - 1.3 Kb)
+0008.835 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0008.838 (0) Table wp_commentmeta: Total rows added: 0 in 0.00 seconds
+0008.840 (0) Table wp_commentmeta: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_commentmeta.table.gz - 0.3 Kb)
+0008.847 (0) Table wp_comments: Total expected rows (approximate): 1
+0008.854 (0) Table wp_comments: Total rows added: 1 in 0.00 seconds
+0008.856 (0) Table wp_comments: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_comments.table.gz - 0.6 Kb)
+0008.868 (0) Table wp_links: Total expected rows (approximate): 0
+0008.873 (0) Table wp_links: Total rows added: 0 in 0.00 seconds
+0008.875 (0) Table wp_links: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_links.table.gz - 0.4 Kb)
+0008.884 (0) Table wp_postmeta: Total expected rows (approximate): 1495
+0008.973 (0) Table wp_postmeta: Total rows added: 1162 in 0.09 seconds
+0008.976 (0) Table wp_postmeta: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_postmeta.table.gz - 21.1 Kb)
+0008.983 (0) Table wp_posts: Total expected rows (approximate): 219
+0009.090 (0) Table wp_posts: Total rows added: 276 in 0.11 seconds
+0009.093 (0) Table wp_posts: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_posts.table.gz - 22.9 Kb)
+0009.100 (0) Table wp_term_relationships: Total expected rows (approximate): 68
+0009.105 (0) Table wp_term_relationships: Total rows added: 68 in 0.00 seconds
+0009.108 (0) Table wp_term_relationships: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_term_relationships.table.gz - 0.5 Kb)
+0009.114 (0) Table wp_term_taxonomy: Total expected rows (approximate): 16
+0009.119 (0) Table wp_term_taxonomy: Total rows added: 16 in 0.00 seconds
+0009.121 (0) Table wp_term_taxonomy: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_term_taxonomy.table.gz - 0.6 Kb)
+0009.127 (0) Table wp_terms: Total expected rows (approximate): 16
+0009.132 (0) Table wp_terms: Total rows added: 16 in 0.00 seconds
+0009.134 (0) Table wp_terms: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_terms.table.gz - 0.6 Kb)
+0009.139 (0) Skipping table (lacks our prefix (wp_)): j60sv_assets
+0009.140 (0) Skipping table (lacks our prefix (wp_)): j60sv_associations
+0009.141 (0) Skipping table (lacks our prefix (wp_)): j60sv_banner_clients
+0009.142 (0) Skipping table (lacks our prefix (wp_)): j60sv_banner_tracks
+0009.144 (0) Skipping table (lacks our prefix (wp_)): j60sv_banners
+0009.145 (0) Skipping table (lacks our prefix (wp_)): j60sv_categories
+0009.146 (0) Skipping table (lacks our prefix (wp_)): j60sv_contact_details
+0009.148 (0) Skipping table (lacks our prefix (wp_)): j60sv_content
+0009.149 (0) Skipping table (lacks our prefix (wp_)): j60sv_content_frontpage
+0009.150 (0) Skipping table (lacks our prefix (wp_)): j60sv_content_rating
+0009.151 (0) Skipping table (lacks our prefix (wp_)): j60sv_content_types
+0009.152 (0) Skipping table (lacks our prefix (wp_)): j60sv_contentitem_tag_map
+0009.154 (0) Skipping table (lacks our prefix (wp_)): j60sv_core_log_searches
+0009.155 (0) Skipping table (lacks our prefix (wp_)): j60sv_extensions
+0009.157 (0) Skipping table (lacks our prefix (wp_)): j60sv_finder_filters
+0009.158 (0) Skipping table (lacks our prefix (wp_)): j60sv_finder_links
+0009.159 (0) Skipping table (lacks our prefix (wp_)): j60sv_finder_links_terms0
+0009.161 (0) Skipping table (lacks our prefix (wp_)): j60sv_finder_links_terms1
+0009.162 (0) Skipping table (lacks our prefix (wp_)): j60sv_finder_links_terms2
+0009.163 (0) Skipping table (lacks our prefix (wp_)): j60sv_finder_links_terms3
+0009.164 (0) Skipping table (lacks our prefix (wp_)): j60sv_finder_links_terms4
+0009.165 (0) Skipping table (lacks our prefix (wp_)): j60sv_finder_links_terms5
+0009.167 (0) Skipping table (lacks our prefix (wp_)): j60sv_finder_links_terms6
+0009.168 (0) Skipping table (lacks our prefix (wp_)): j60sv_finder_links_terms7
+0009.169 (0) Skipping table (lacks our prefix (wp_)): j60sv_finder_links_terms8
+0009.170 (0) Skipping table (lacks our prefix (wp_)): j60sv_finder_links_terms9
+0009.173 (0) Skipping table (lacks our prefix (wp_)): j60sv_finder_links_termsa
+0009.175 (0) Skipping table (lacks our prefix (wp_)): j60sv_finder_links_termsb
+0009.176 (0) Skipping table (lacks our prefix (wp_)): j60sv_finder_links_termsc
+0009.177 (0) Skipping table (lacks our prefix (wp_)): j60sv_finder_links_termsd
+0009.179 (0) Skipping table (lacks our prefix (wp_)): j60sv_finder_links_termse
+0009.180 (0) Skipping table (lacks our prefix (wp_)): j60sv_finder_links_termsf
+0009.181 (0) Skipping table (lacks our prefix (wp_)): j60sv_finder_taxonomy
+0009.182 (0) Skipping table (lacks our prefix (wp_)): j60sv_finder_taxonomy_map
+0009.183 (0) Skipping table (lacks our prefix (wp_)): j60sv_finder_terms
+0009.184 (0) Skipping table (lacks our prefix (wp_)): j60sv_finder_terms_common
+0009.185 (0) Skipping table (lacks our prefix (wp_)): j60sv_finder_tokens
+0009.186 (0) Skipping table (lacks our prefix (wp_)): j60sv_finder_tokens_aggregate
+0009.187 (0) Skipping table (lacks our prefix (wp_)): j60sv_finder_types
+0009.189 (0) Skipping table (lacks our prefix (wp_)): j60sv_languages
+0009.190 (0) Skipping table (lacks our prefix (wp_)): j60sv_menu
+0009.191 (0) Skipping table (lacks our prefix (wp_)): j60sv_menu_types
+0009.192 (0) Skipping table (lacks our prefix (wp_)): j60sv_messages
+0009.193 (0) Skipping table (lacks our prefix (wp_)): j60sv_messages_cfg
+0009.194 (0) Skipping table (lacks our prefix (wp_)): j60sv_modules
+0009.196 (0) Skipping table (lacks our prefix (wp_)): j60sv_modules_menu
+0009.197 (0) Skipping table (lacks our prefix (wp_)): j60sv_newsfeeds
+0009.199 (0) Skipping table (lacks our prefix (wp_)): j60sv_overrider
+0009.200 (0) Skipping table (lacks our prefix (wp_)): j60sv_postinstall_messages
+0009.201 (0) Skipping table (lacks our prefix (wp_)): j60sv_redirect_links
+0009.202 (0) Skipping table (lacks our prefix (wp_)): j60sv_schemas
+0009.203 (0) Skipping table (lacks our prefix (wp_)): j60sv_session
+0009.204 (0) Skipping table (lacks our prefix (wp_)): j60sv_tags
+0009.205 (0) Skipping table (lacks our prefix (wp_)): j60sv_template_styles
+0009.206 (0) Skipping table (lacks our prefix (wp_)): j60sv_ucm_base
+0009.207 (0) Skipping table (lacks our prefix (wp_)): j60sv_ucm_content
+0009.208 (0) Skipping table (lacks our prefix (wp_)): j60sv_ucm_history
+0009.209 (0) Skipping table (lacks our prefix (wp_)): j60sv_update_sites
+0009.211 (0) Skipping table (lacks our prefix (wp_)): j60sv_update_sites_extensions
+0009.212 (0) Skipping table (lacks our prefix (wp_)): j60sv_updates
+0009.213 (0) Skipping table (lacks our prefix (wp_)): j60sv_user_keys
+0009.214 (0) Skipping table (lacks our prefix (wp_)): j60sv_user_notes
+0009.215 (0) Skipping table (lacks our prefix (wp_)): j60sv_user_profiles
+0009.216 (0) Skipping table (lacks our prefix (wp_)): j60sv_user_usergroup_map
+0009.217 (0) Skipping table (lacks our prefix (wp_)): j60sv_usergroups
+0009.218 (0) Skipping table (lacks our prefix (wp_)): j60sv_users
+0009.219 (0) Skipping table (lacks our prefix (wp_)): j60sv_viewlevels
+0009.221 (0) Skipping table (lacks our prefix (wp_)): j60sv_weblinks
+0009.227 (0) Table wp_bwg_album: Total expected rows (approximate): 0
+0009.231 (0) Table wp_bwg_album: Total rows added: 0 in 0.00 seconds
+0009.232 (0) Table wp_bwg_album: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_bwg_album.table.gz - 0.3 Kb)
+0009.242 (0) Table wp_bwg_album_gallery: Total expected rows (approximate): 0
+0009.245 (0) Table wp_bwg_album_gallery: Total rows added: 0 in 0.00 seconds
+0009.247 (0) Table wp_bwg_album_gallery: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_bwg_album_gallery.table.gz - 0.3 Kb)
+0009.262 (0) Table wp_bwg_gallery: Total expected rows (approximate): 1
+0009.266 (0) Table wp_bwg_gallery: Total rows added: 1 in 0.00 seconds
+0009.268 (0) Table wp_bwg_gallery: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_bwg_gallery.table.gz - 0.4 Kb)
+0009.275 (0) Table wp_bwg_image: Total expected rows (approximate): 5
+0009.286 (0) Table wp_bwg_image: Total rows added: 5 in 0.01 seconds
+0009.288 (0) Table wp_bwg_image: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_bwg_image.table.gz - 0.8 Kb)
+0009.297 (0) Table wp_bwg_image_comment: Total expected rows (approximate): 0
+0009.301 (0) Table wp_bwg_image_comment: Total rows added: 0 in 0.00 seconds
+0009.303 (0) Table wp_bwg_image_comment: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_bwg_image_comment.table.gz - 0.3 Kb)
+0009.310 (0) Table wp_bwg_image_rate: Total expected rows (approximate): 0
+0009.313 (0) Table wp_bwg_image_rate: Total rows added: 0 in 0.00 seconds
+0009.316 (0) Table wp_bwg_image_rate: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_bwg_image_rate.table.gz - 0.3 Kb)
+0009.324 (0) Table wp_bwg_image_tag: Total expected rows (approximate): 0
+0009.327 (0) Table wp_bwg_image_tag: Total rows added: 0 in 0.00 seconds
+0009.328 (0) Table wp_bwg_image_tag: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_bwg_image_tag.table.gz - 0.3 Kb)
+0009.347 (0) Table wp_bwg_option: Total expected rows (approximate): 1
+0009.360 (0) Table wp_bwg_option: Total rows added: 1 in 0.01 seconds
+0009.362 (0) Table wp_bwg_option: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_bwg_option.table.gz - 1.3 Kb)
+0009.371 (0) Table wp_bwg_shortcode: Total expected rows (approximate): 0
+0009.374 (0) Table wp_bwg_shortcode: Total rows added: 0 in 0.00 seconds
+0009.387 (0) Table wp_bwg_shortcode: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_bwg_shortcode.table.gz - 0.3 Kb)
+0009.406 (0) Table wp_bwg_theme: Total expected rows (approximate): 2
+0009.452 (0) Table wp_bwg_theme: Total rows added: 2 in 0.04 seconds
+0009.456 (0) Table wp_bwg_theme: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_bwg_theme.table.gz - 2.9 Kb)
+0009.466 (0) Table wp_cis_categories: Total expected rows (approximate): 1
+0009.471 (0) Table wp_cis_categories: Total rows added: 1 in 0.00 seconds
+0009.473 (0) Table wp_cis_categories: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_cis_categories.table.gz - 0.4 Kb)
+0009.482 (0) Table wp_cis_images: Total expected rows (approximate): 5
+0009.491 (0) Table wp_cis_images: Total rows added: 5 in 0.01 seconds
+0009.493 (0) Table wp_cis_images: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_cis_images.table.gz - 1.7 Kb)
+0009.502 (0) Table wp_cis_sliders: Total expected rows (approximate): 1
+0009.543 (0) Table wp_cis_sliders: Total rows added: 1 in 0.04 seconds
+0009.547 (0) Table wp_cis_sliders: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_cis_sliders.table.gz - 1.1 Kb)
+0009.556 (0) Table wp_cntctfrm_field: Total expected rows (approximate): 13
+0009.561 (0) Table wp_cntctfrm_field: Total rows added: 13 in 0.00 seconds
+0009.563 (0) Table wp_cntctfrm_field: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_cntctfrm_field.table.gz - 0.4 Kb)
+0009.572 (0) Table wp_ngg_album: Total expected rows (approximate): 0
+0009.576 (0) Table wp_ngg_album: Total rows added: 0 in 0.00 seconds
+0009.578 (0) Table wp_ngg_album: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_ngg_album.table.gz - 0.4 Kb)
+0009.586 (0) Table wp_ngg_gallery: Total expected rows (approximate): 1
+0009.591 (0) Table wp_ngg_gallery: Total rows added: 1 in 0.00 seconds
+0009.593 (0) Table wp_ngg_gallery: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_ngg_gallery.table.gz - 0.4 Kb)
+0009.601 (0) Table wp_ngg_pictures: Total expected rows (approximate): 2
+0009.606 (0) Table wp_ngg_pictures: Total rows added: 2 in 0.00 seconds
+0009.608 (0) Table wp_ngg_pictures: finishing file (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_ngg_pictures.table.gz - 1.6 Kb)
+0009.615 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_options.table.gz (1/96): adding to final database dump
+0009.718 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_users.table.gz (2/96): adding to final database dump
+0009.720 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_usermeta.table.gz (3/96): adding to final database dump
+0009.725 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_commentmeta.table.gz (4/96): adding to final database dump
+0009.727 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_comments.table.gz (5/96): adding to final database dump
+0009.728 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_links.table.gz (6/96): adding to final database dump
+0009.731 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_postmeta.table.gz (7/96): adding to final database dump
+0009.756 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_posts.table.gz (8/96): adding to final database dump
+0009.782 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_term_relationships.table.gz (9/96): adding to final database dump
+0009.785 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_term_taxonomy.table.gz (10/96): adding to final database dump
+0009.787 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_terms.table.gz (11/96): adding to final database dump
+0009.789 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_bwg_album.table.gz (12/96): adding to final database dump
+0009.792 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_bwg_album_gallery.table.gz (13/96): adding to final database dump
+0009.793 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_bwg_gallery.table.gz (14/96): adding to final database dump
+0009.795 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_bwg_image.table.gz (15/96): adding to final database dump
+0009.796 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_bwg_image_comment.table.gz (16/96): adding to final database dump
+0009.798 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_bwg_image_rate.table.gz (17/96): adding to final database dump
+0009.799 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_bwg_image_tag.table.gz (18/96): adding to final database dump
+0009.801 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_bwg_option.table.gz (19/96): adding to final database dump
+0009.803 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_bwg_shortcode.table.gz (20/96): adding to final database dump
+0009.805 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_bwg_theme.table.gz (21/96): adding to final database dump
+0009.811 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_cis_categories.table.gz (22/96): adding to final database dump
+0009.812 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_cis_images.table.gz (23/96): adding to final database dump
+0009.815 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_cis_sliders.table.gz (24/96): adding to final database dump
+0009.817 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_cntctfrm_field.table.gz (25/96): adding to final database dump
+0009.819 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_ngg_album.table.gz (26/96): adding to final database dump
+0009.820 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_ngg_gallery.table.gz (27/96): adding to final database dump
+0009.822 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db-table-wp_ngg_pictures.table.gz (28/96): adding to final database dump
+0009.824 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db.gz: finished writing out complete database file (184 Kb)
+0009.835 (0) Total database tables backed up: 28 (backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db.gz, size: 210322, checksum (SHA1): aedfc8cf7f871420736d102ba5744a827fd4b18f)
+0009.841 (0) Saving backup history
+0009.850 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0009.852 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0009.854 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0009.856 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-others.zip: others: This file has not yet been successfully uploaded: will queue
+0009.857 (0) backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-db.gz: db: This file has not yet been successfully uploaded: will queue
+0009.862 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0009.867 (0) Cloud backup selection: dropbox
+0009.868 (0) Beginning dispatch of backup to remote (dropbox)
+0009.869 (0) Dropbox: begin cloud upload
+0009.877 (0) Dropbox: access gained
+0011.225 (0) Dropbox quota usage: normal=19.3 Mb, shared=0 Mb, total=2048 Mb, available=2028.7 Mb
+0011.227 (0) Dropbox: Attempt to upload: backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-plugins.zip to: backup_2015-03-30-0714_Moudouris_Brakes_155d0ee7340d-plugins.zip
+0027.603 (0) Dropbox chunked upload: 8.8 % uploaded (AdcrO9YgeMvOCWEpgNzJSA, 1048576)
+0045.679 (0) Dropbox chunked upload: 17.5 % uploaded (AdcrO9YgeMvOCWEpgNzJSA, 2097152)
