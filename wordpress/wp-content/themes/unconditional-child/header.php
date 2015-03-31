@@ -11,7 +11,6 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Εφαρμογές ABS/EBS/ECAS * επισκευή συστημάτων αέρος * έλεγχος φρένων - ABS / EBS / ECAS installations * air systems service * brake control ">
   <title><?php wp_title( '|', true, 'right' ); ?></title>
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
