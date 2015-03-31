@@ -30,9 +30,6 @@ get_header(); ?>
 		    	      get_template_part( 'content/feed' );
 			    ?>
 		</div>
-           <!--<div class="col-sm-4">
-		       <?php //get_sidebar(); ?>
-		   </div>-->
         </div>
       </div>
    </div>

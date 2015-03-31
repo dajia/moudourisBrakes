@@ -34,11 +34,9 @@ get_header(); ?>
 
 			<?php endwhile; // end of the loop. ?>
         <?php do_action( 'unconditional_after_page' ); ?>
-		</div>
+		  </div>
           <?php if ( is_active_sidebar( 'page' ) ) { ?>
-		  <!--<div class="col-sm-4">
-		       <?php //get_sidebar( 'page' ); ?>
-		  </div>-->
+
 		  <?php } ?>
         </div>
       </div>

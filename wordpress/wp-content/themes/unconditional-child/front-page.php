@@ -36,11 +36,6 @@ if ( get_theme_mod( 'unconditional_services_visibility' ) != 1 ) { ?>
 			}
 		  ?>
          </div>
-          
-		 <!--<div class="col-sm-4">
-		     <?php //get_sidebar(); ?>
-		 </div>-->
-		  
         </div>
       </div>
    </div>
