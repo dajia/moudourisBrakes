@@ -12,16 +12,10 @@ get_header(); ?>
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1">
       <div class="row">
-        <?php //if ( is_active_sidebar( 'page' ) ) : ?>
-        <!--<div class="col-sm-12">-->
-          <?php //else : ?>
           <div class="col-xs-12 col-sm-12 col-md-6">
-            <?php //endif; ?>
             <?php do_action( 'unconditional_before_page' ); ?>
             <?php while ( have_posts() ) : the_post(); ?>
-
               <?php get_template_part( 'content/content', 'page' ); ?>
-
               <?php
               // If comments are open or we have at least one comment, load up the comment template
               if ( comments_open() || '0' != get_comments_number() )
@@ -31,23 +25,13 @@ get_header(); ?>
             <?php endwhile; // end of the loop. ?>
             <?php do_action( 'unconditional_after_page' ); ?>
           </div>
-       <!-- <div class="col-xs-12 col-sm-12 col-md-12">
-          <div class="img-map">
-            <img src="<?php //echo get_stylesheet_directory_uri(); ?>/assets/images/map2.jpg">
-          </div>
-        </div>-->
           <?php if ( !is_active_sidebar( 'page' ) ) { ?>
-
-
-
-		  <!--</div>-->
           <?php } ?>
         <div class="col-xs-12 col-sm-12 col-md-6">
           <div class="infos">
             <?php the_field('contact_info'); ?>
           </div>
         </div>
-
       </div>
     </div>
   </div>
