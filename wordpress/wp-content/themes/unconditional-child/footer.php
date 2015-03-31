@@ -6,7 +6,11 @@
 		<div class="container">
       <span class="copyright">Moudouris Brakes &copy; <?php echo date('Y'); ?></span>
       <span class="sep"> | </span>
-      <span class="social"><a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook-square fa-lg"></i></a><a href="mailto:dajia@polyptychon.gr"><i class="fa fa-envelope fa-lg"></i></a><a href="http://www.googlemaps.com" target="_blank"><i class="fa fa-map-marker fa-lg"></i></a></span>
+      <span class="social">
+        <a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook-square fa-lg"></i></a>
+        <a href="mailto:dajia@polyptychon.gr"><i class="fa fa-envelope fa-lg"></i></a>
+        <!--<a href="http://www.googlemaps.com" target="_blank"><i class="fa fa-map-marker fa-lg"></i></a></span>-->
+        <a href="/epikoinonia-frena-moudouris/map/"><i class="fa fa-map-marker fa-lg"></i></a></span>
       <!--
 			<?php do_action( 'unconditional_before_credits' );
 			//printf( __( 'Proudly Powered By', 'unconditional' ) ); ?><a target="_Blank" href="<?php //echo esc_url( __( 'http://wordpress.org/', 'unconditional' ) ); ?>" title="<?php //esc_attr_e( 'Semantic Personal Publishing Platform', 'unconditional' ); ?>"><?php //printf( __( ' %s', 'unconditional' ), 'WordPress' ); ?></a>
