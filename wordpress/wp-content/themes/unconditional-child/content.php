@@ -5,7 +5,7 @@
 ?>
 <div class="col-md-3 col-sm-4 col-sm-12">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<header class="entry-header col-sm-12">
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
