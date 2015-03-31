@@ -42,11 +42,8 @@ get_header(); ?>
 
 		<?php endif; ?>
         <?php do_action( 'unconditional_after_index' ); ?>
-		</div>
-          <!--<div class="col-sm-4">
-		       <?php //get_sidebar(); ?>
-		  </div>
-        </div>-->
+		      </div>
+        </div>
       </div>
    </div>
 </section>
