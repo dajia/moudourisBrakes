@@ -985,6 +985,19 @@ h1 {
 
 textarea, input[type=text],input[type=email] {
   width:360px;
+  border-radius: 0;
+}
+
+textarea:focus, input[type=text]:focus,input[type=email]:focus {
+
+  outline: #f33f3f auto 5px;
+  outline-width: 5px;
+  outline-style: auto;
+  outline-color: #f33f3f;
+}
+
+.wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok {
+  display:none !important;
 }
 
 /*===========Dajia styles END==========*/
