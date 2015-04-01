@@ -14,7 +14,7 @@
 
 			<?php do_action( 'unconditional_before_credits' ); ?>
 		<?php do_action( 'unconditional_after_credits' ); ?>
-	    -->
+
       </div>
 	    </div><!-- .site-info -->
 <?php do_action( 'unconditional_in_after_colophon' ); ?>

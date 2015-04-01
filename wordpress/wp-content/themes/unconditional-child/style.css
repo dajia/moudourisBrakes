@@ -1039,22 +1039,29 @@ h1 {
 }
 
 #noscript {
-  background-color: #e6402a;
+  background-color: #f33f3f;
   min-height: 20px;
-  padding: 5px;
+  padding: 0px;
   margin: 0 auto;
   text-align: center;
+  font-size: 1.2em;
+  padding-bottom: 0px;
 }
 #noscript p {
-  margin-bottom:0;
+  margin-bottom:-2px;
   color: #fff;
 }
 
 #browserChoice {
-  color: #ccc;
+  color: #fff;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 0px;
+}
+
+#browserChoice p {
+  margin-bottom: -3px !important;
+  font-size: 1.2em;
 }
 #browserChoice a {
-  color:#e6402a;
+  color:#f33f3f;
 }
