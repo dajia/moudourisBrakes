@@ -987,9 +987,11 @@ textarea, input[type=text],input[type=email] {
   width:360px;
   border-radius: 0;
 }
+a:focus {
+  outline: none;
+}
 
 textarea:focus, input[type=text]:focus,input[type=email]:focus {
-
   outline: #f33f3f auto 5px;
   outline-width: 5px;
   outline-style: auto;
