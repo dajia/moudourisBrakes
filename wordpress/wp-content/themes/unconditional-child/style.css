@@ -954,6 +954,39 @@ div.wpcf7-mail-sent-ok {
 h1 {
  line-height: 125%;
 }
+
+#noscript {
+  background-color: #f33f3f;
+  min-height: 20px;
+  padding: 0px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2em;
+  padding-bottom: 0px;
+}
+#noscript p {
+  margin-bottom:-2px;
+  color: #fff;
+}
+
+#browserChoice {
+  color: #fff;
+  text-align: center;
+  padding-top: 0px;
+}
+
+#browserChoice p {
+  margin-bottom: -3px !important;
+  font-size: 1.2em;
+}
+#browserChoice a {
+  color:#f33f3f;
+}
+
+textarea, input[type=text],input[type=email] {
+  width:360px;
+}
+
 /*===========Dajia styles END==========*/
 
 /**
@@ -1036,32 +1069,4 @@ h1 {
 
 .singular .page-header, .archive .page-header, .single-project .page-header {
  padding-top: 20px;
-}
-
-#noscript {
-  background-color: #f33f3f;
-  min-height: 20px;
-  padding: 0px;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 1.2em;
-  padding-bottom: 0px;
-}
-#noscript p {
-  margin-bottom:-2px;
-  color: #fff;
-}
-
-#browserChoice {
-  color: #fff;
-  text-align: center;
-  padding-top: 0px;
-}
-
-#browserChoice p {
-  margin-bottom: -3px !important;
-  font-size: 1.2em;
-}
-#browserChoice a {
-  color:#f33f3f;
 }

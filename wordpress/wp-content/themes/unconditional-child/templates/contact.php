@@ -10,7 +10,7 @@ get_header(); ?>
 
 <section class="container-fluid" id="section3">
   <div class="row">
-    <div class="col-sm-10 col-sm-offset-1">
+    <div class="col-sm-10 col-sm-offset-2">
       <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-6">
             <?php do_action( 'unconditional_before_page' ); ?>
