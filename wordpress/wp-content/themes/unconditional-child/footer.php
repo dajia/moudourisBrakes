@@ -10,7 +10,11 @@
         <a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook-square fa-lg"></i></a>
         <a href="mailto:dajia@polyptychon.gr"><i class="fa fa-envelope fa-lg"></i></a>
         <!--<a href="http://www.googlemaps.com" target="_blank"><i class="fa fa-map-marker fa-lg"></i></a></span>-->
-        <a href="/epikoinonia-frena-moudouris/map/"><i class="fa fa-map-marker fa-lg"></i></a></span>
+        <?php if(get_locale() === "el" ){
+          print '<a href="/epikoinonia-frena-moudouris/find-us/"><i class="fa fa-map-marker fa-lg"></i></a></span>';
+        }else{
+          print '<a href="/en/contact-moudouris-brakes/find-us/"><i class="fa fa-map-marker fa-lg"></i></a></span>';
+        }?>
 
 			<?php do_action( 'unconditional_before_credits' ); ?>
 		<?php do_action( 'unconditional_after_credits' ); ?>
