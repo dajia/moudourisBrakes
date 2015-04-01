@@ -17,6 +17,14 @@
     <?php wp_head(); ?>
   </head>
 <body <?php body_class(); ?>>
+
+<!--[if IE 6]>
+<div id="browserChoice"><p>Welcome to <a href="#">Moudouris Brakes</a>. Our new site makes use of the modern standards, some of which are not supported by your web browser. <a href="http://browsehappy.com/" target="_blank">Click here to upgrade or to choose another free, modern and secure web browser</a>.</p></div>
+<![endif]-->
+<noscript>
+  <div id="noscript"><p>You must Enable Javascript to enjoy the full content of this website.</p></div>
+</noscript>
+
 <?php
 
 

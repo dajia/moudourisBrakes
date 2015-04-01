@@ -1037,3 +1037,24 @@ h1 {
 .singular .page-header, .archive .page-header, .single-project .page-header {
  padding-top: 20px;
 }
+
+#noscript {
+  background-color: #e6402a;
+  min-height: 20px;
+  padding: 5px;
+  margin: 0 auto;
+  text-align: center;
+}
+#noscript p {
+  margin-bottom:0;
+  color: #fff;
+}
+
+#browserChoice {
+  color: #ccc;
+  text-align: center;
+  padding-top: 10px;
+}
+#browserChoice a {
+  color:#e6402a;
+}
