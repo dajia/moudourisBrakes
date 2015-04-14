@@ -3,8 +3,8 @@ Contributors: Chouby
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CCWWYUUQV8F4E
 Tags: multilingual, bilingual, translate, translation, language, multilanguage, international, localization
 Requires at least: 3.8
-Tested up to: 4.1
-Stable tag: 1.7.2
+Tested up to: 4.2
+Stable tag: 1.7.3
 License: GPLv2 or later
 
 Polylang adds multilingual content management support to WordPress.
@@ -66,6 +66,17 @@ See http://polylang.wordpress.com/documentation/contribute/
 1. The Polylang languages admin panel in WordPress 3.8
 
 == Changelog ==
+
+= 1.7.3 (2015-04-11) =
+
+* the transient 'pll_languages_list' now stores an array of arrays instead of an array of PLL_Language objects
+* fix: fatal error for users hosted at GoDaddy (due to PLL_Language objects stored in a transient) 
+* fix: additional query vars are removed from home page
+* fix: categories are not filtered by the admin language switcher in posts list table (introduced in 1.7)
+* fix: when using multiple domains, the domain url is lost when modifying the language slug
+* fix: the queried object is incorrectly set for author archives (introduced in 1.6.5)
+* fix: notice when a nav menu assigned to a translated nav menu location has been deleted
+* fix: no canonical redirection when using pretty permalinks and querying default permalinks
 
 = 1.7.2 (2015-03-23) =
 
