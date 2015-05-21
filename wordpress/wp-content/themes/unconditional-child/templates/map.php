@@ -13,8 +13,8 @@ get_header(); ?>
     <div class="col-sm-12">
             <?php do_action( 'unconditional_before_page' ); ?>
             <?php while ( have_posts() ) : the_post(); ?>
-
-              <?php get_template_part( 'content/content', 'page' ); ?>
+              <p style="margin-top:50px;"><iframe src="https://www.google.com/maps/d/u/1/embed?mid=zU_cjgBw_yBM.k7xZM3JxiFng" width="640" height="780"></iframe></p>
+              <?php //get_template_part( 'content/content', 'page' ); ?>
 
               <?php
               // If comments are open or we have at least one comment, load up the comment template
