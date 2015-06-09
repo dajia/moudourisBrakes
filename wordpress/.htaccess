@@ -3,12 +3,6 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
-
-
-RewriteCond /Users/dajia/Development/moudourisbrakes/wordpress/wp-content/sitemaps%{REQUEST_URI} -f
-RewriteRule \.xml(\.gz)?$ /wp-content/sitemaps%{REQUEST_URI} [L]
-
-
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
