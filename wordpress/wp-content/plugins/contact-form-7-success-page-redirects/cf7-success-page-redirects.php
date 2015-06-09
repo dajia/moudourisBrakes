@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Contact Form 7 - Success Page Redirects
  * Description: An add-on for Contact Form 7 that provides a straightforward method to redirect visitors to success pages or thank you pages.
- * Version: 1.1.6
+ * Version: 1.2.0
  * Author: Ryan Nevius
  * Author URI: http://www.ryannevius.com
  * License: GPLv3
@@ -42,28 +42,66 @@ add_filter( 'wpcf7_load_js', '__return_false' );
 
 
 /**
- * Adds a box to the main column on the form edit page.
+ * Adds a box to the main column on the form edit page. 
+ *
+ * CF7 < 4.2
  */
-// Register the meta boxes
-function cf7_success_page_settings() {
+function cf7_success_page_add_meta_boxes() {
     add_meta_box( 'cf7-redirect-settings', 'Success Page Redirect', 'cf7_success_page_metaboxes', '', 'form', 'low');
 }
-add_action( 'wpcf7_add_meta_boxes', 'cf7_success_page_settings' );
+add_action( 'wpcf7_add_meta_boxes', 'cf7_success_page_add_meta_boxes' );
 
-// Create the meta boxes
+
+/**
+ * Adds a tab to the editor on the form edit page. 
+ *
+ * CF7 >= 4.2
+ */
+function cf7_success_add_page_panels($panels) {
+    $panels['redirect-panel'] = array( 'title' => 'Redirect Settings', 'callback' => 'cf7_success_page_panel_meta' );
+    return $panels;
+}
+add_action( 'wpcf7_editor_panels', 'cf7_success_add_page_panels' );
+
+
+// Create the meta boxes (CF7 < 4.2)
 function cf7_success_page_metaboxes( $post ) {
     wp_nonce_field( 'cf7_success_page_metaboxes', 'cf7_success_page_metaboxes_nonce' );
     $cf7_success_page = get_post_meta( $post->id(), '_cf7_success_page_key', true );
 
     // The meta box content
-    echo '<label for="cf7-redirect-page-id"><strong>Redirect to: </strong></label><br> ';
     $dropdown_options = array (
+            'echo' => 0,
             'name' => 'cf7-redirect-page-id', 
             'show_option_none' => '--', 
             'option_none_value' => '0',
             'selected' => $cf7_success_page
         );
-    wp_dropdown_pages( $dropdown_options );
+
+    echo '<fieldset>
+            <legend>Select a page to redirect to on successful form submission.</legend>' .
+            wp_dropdown_pages( $dropdown_options ) .
+         '</fieldset>';
+}
+// Create the panel inputs (CF7 >= 4.2)
+function cf7_success_page_panel_meta( $post ) {
+    wp_nonce_field( 'cf7_success_page_metaboxes', 'cf7_success_page_metaboxes_nonce' );
+    $cf7_success_page = get_post_meta( $post->id(), '_cf7_success_page_key', true );
+
+    // The meta box content
+    $dropdown_options = array (
+            'echo' => 0,
+            'name' => 'cf7-redirect-page-id', 
+            'show_option_none' => '--', 
+            'option_none_value' => '0',
+            'selected' => $cf7_success_page
+        );
+
+    echo '<h3>Redirect Settings</h3>
+          <fieldset>
+            <legend>Select a page to redirect to on successful form submission.</legend>' .
+            wp_dropdown_pages( $dropdown_options ) .
+         '</fieldset>';
 }
 
 // Store Success Page Info
