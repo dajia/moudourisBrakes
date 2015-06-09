@@ -1,9 +1,12 @@
 Theme Name:   Unconditional
 File Name:    Changelog
-Tested up to: 4.1.1
-Stable tag:	  1.1.2
+Tested up to: 4.1.2
+Stable tag:	  1.1.3
 
 == Changelog ==
+
+= 1.1.3 =
+* Fixed: Implemented security patch related to add_query_arg()
 
 = 1.1.2 =
 * Bug fix on widget input misalignment.

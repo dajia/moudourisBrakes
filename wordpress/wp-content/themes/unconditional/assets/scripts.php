@@ -37,10 +37,10 @@ function unconditional_font_url() {
 	}
 
 	if ( $fonts ) {
-		$fonts_url = add_query_arg( array(
+		$fonts_url = esc_url(add_query_arg( array(
 			'family' => urlencode( implode( '|', $fonts ) ),
 			'subset' => urlencode( $subsets ),
-		), '//fonts.googleapis.com/css' );
+		), '//fonts.googleapis.com/css' ));
 	}
 
 	return $fonts_url;
